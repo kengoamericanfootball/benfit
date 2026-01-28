@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「痛い」と言われたらどうする？トレーナーの安全配慮義務を考える｜BenFit コラム</title>
+    <meta name="description" content="トレーニング中に会員が痛みを訴えた場合、トレーナーはどう対応すべきか？実際の裁判例から学ぶ安全配慮義務と記録の重要性。">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KNY9CC6DX9');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #111111;
+            --color-bg-tertiary: #1a1a1a;
+            --color-gold: #d4a853;
+            --color-gold-light: #e8c878;
+            --color-text-primary: #ffffff;
+            --color-text-secondary: #a0a0a0;
+            --color-text-muted: #666666;
+            --color-border: #2a2a2a;
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Noto Sans JP', sans-serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --transition-fast: 0.2s ease;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        a:hover {
+            color: var(--color-gold-light);
+        }
+
+        .header {
+            background: var(--color-bg-secondary);
+            border-bottom: 1px solid var(--color-border);
+            padding: var(--spacing-sm) var(--spacing-md);
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--color-gold);
+        }
+
+        .back-link {
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .article-category {
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .article-title {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .article-content h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            padding-left: var(--spacing-sm);
+            border-left: 4px solid var(--color-gold);
+        }
+
+        .article-content p {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .article-content ul {
+            color: var(--color-text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .article-content li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .article-content strong {
+            color: var(--color-text-primary);
+        }
+
+        .highlight-box {
+            background: var(--color-bg-tertiary);
+            border-left: 4px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--color-text-primary);
+        }
+
+        .case-info {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            font-size: 0.9rem;
+        }
+
+        .case-info-title {
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.1) 0%, transparent 100%);
+            border: 1px solid var(--color-gold);
+            padding: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .cta-box p {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
+            color: var(--color-bg-primary);
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 168, 83, 0.3);
+            color: var(--color-bg-primary);
+        }
+
+        .footer {
+            background: var(--color-bg-secondary);
+            border-top: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            text-align: center;
+            margin-top: var(--spacing-lg);
+        }
+
+        .footer-copyright {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .related-articles {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .related-articles h3 {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .related-link {
+            display: block;
+            padding: var(--spacing-sm);
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            margin-bottom: var(--spacing-sm);
+            transition: all 0.3s ease;
+        }
+
+        .related-link:hover {
+            border-color: var(--color-gold);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">BEN<span>FIT</span></a>
+            <a href="index.html#column" class="back-link">← コラム一覧に戻る</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="article-meta">
+            <span class="article-category">判例解説</span>
+            <span>2025年1月25日</span>
+        </div>
+        
+        <h1 class="article-title">「痛い」と言われたらどうする？<br>トレーナーの安全配慮義務を考える</h1>
+
+        <article class="article-content">
+            <div class="case-info">
+                <div class="case-info-title">📋 参考判例</div>
+                東京地裁 平成26年6月13日判決
+            </div>
+
+            <h2>事例の概要</h2>
+            <p>スポーツクラブで、トレーナーの指導中に会員が「痛い」と訴えたにもかかわらず、レッグプレスなどのトレーニングを継続。その後、会員が腰椎椎間板障害を発症したとして、損害賠償を求めた裁判です。</p>
+
+            <h2>裁判所の判断</h2>
+            <p>結論として、<strong>請求は棄却</strong>されました。</p>
+            <p>理由は、会員が痛みを訴えた後もトレーニングに継続参加していた点が「不自然」と認定されたためです。</p>
+            
+            <div class="highlight-box">
+                <p>ただし、この判決は<strong>トレーナーの安全配慮義務の重要性</strong>を改めて示すものでもあります。</p>
+            </div>
+
+            <h2>ジム経営者・トレーナーが学ぶべきこと</h2>
+            <p>今回は請求棄却でしたが、<strong>記録がなければ逆の結論になっていた可能性</strong>もあります。</p>
+            <p>「言った・言わない」の争いを防ぐため、以下の対策をおすすめします。</p>
+            <ul>
+                <li><strong>トレーニングログを毎回記録する</strong>（日時、内容、会員の様子）</li>
+                <li><strong>痛みや不調の訴えがあった場合は必ず記録に残す</strong></li>
+                <li><strong>継続の判断は会員の自己責任と書面で確認する</strong></li>
+            </ul>
+
+            <h2>まとめ</h2>
+            <p>記録は、トレーナー自身を守る「盾」になります。万が一のトラブルに備え、日々のトレーニングログを習慣化しましょう。</p>
+
+            <div class="cta-box">
+                <h3>契約書・規約の整備はできていますか？</h3>
+                <p>トレーニングログの記録方法、免責条項の書き方など、<br>フィットネス業界に詳しい弁護士がアドバイスします。</p>
+                <a href="index.html#contact" class="btn">無料で相談する</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copyright">&copy; 2025 BenFit. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

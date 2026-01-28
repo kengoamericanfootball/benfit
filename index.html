@@ -1154,6 +1154,80 @@
         }
 
         /* ========================================
+           Column Section
+        ======================================== */
+        .column {
+            background: var(--color-bg-secondary);
+        }
+
+        .column-lead {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-lg);
+            font-size: 1.05rem;
+        }
+
+        .column-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .column-card {
+            display: block;
+            background: var(--color-bg-primary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .column-card:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-5px);
+        }
+
+        .column-card-category {
+            display: inline-block;
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .column-card-date {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .column-card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.5;
+        }
+
+        .column-card-excerpt {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.7;
+        }
+
+        .column-card-link {
+            font-size: 0.9rem;
+            color: var(--color-gold);
+            font-weight: 500;
+        }
+
+        .column-card:hover .column-card-link {
+            text-decoration: underline;
+        }
+
+        /* ========================================
            FAQ Section
         ======================================== */
         .faq {
@@ -2016,6 +2090,24 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Column Section -->
+    <section class="column section" id="column">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">コラム</h2>
+            <p class="column-lead animate-on-scroll">フィットネス業界の法律問題を、実際の事例をもとに解説します。</p>
+            
+            <div class="column-grid">
+                <a href="column-001.html" class="column-card animate-on-scroll">
+                    <div class="column-card-category">判例解説</div>
+                    <div class="column-card-date">2025.01.25</div>
+                    <h3 class="column-card-title">「痛い」と言われたらどうする？トレーナーの安全配慮義務を考える</h3>
+                    <p class="column-card-excerpt">トレーニング中に会員が痛みを訴えた場合、トレーナーはどう対応すべきか？実際の裁判例から学びます。</p>
+                    <span class="column-card-link">続きを読む →</span>
+                </a>
             </div>
         </div>
     </section>
