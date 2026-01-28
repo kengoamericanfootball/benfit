@@ -751,6 +751,72 @@
         }
 
         /* ========================================
+           About Section (BenFitの由来)
+        ======================================== */
+        .about {
+            background: var(--color-bg-primary);
+            position: relative;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-name {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .about-name-main {
+            display: block;
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            color: var(--color-gold);
+            letter-spacing: 0.1em;
+        }
+
+        .about-name-reading {
+            display: block;
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            margin-top: var(--spacing-xs);
+            letter-spacing: 0.2em;
+        }
+
+        .about-text {
+            text-align: left;
+        }
+
+        .about-text p {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.05rem;
+            line-height: 2;
+        }
+
+        .about-quote {
+            font-size: 1.2rem !important;
+            color: var(--color-text-primary) !important;
+            font-weight: 500;
+            padding: var(--spacing-md);
+            background: var(--color-bg-tertiary);
+            border-left: 4px solid var(--color-gold);
+            margin: var(--spacing-md) 0 !important;
+        }
+
+        /* ========================================
            Profile Section
         ======================================== */
         .profile {
@@ -1470,7 +1536,7 @@
                         <li><a href="#services">サービス</a></li>
                         <li><a href="#pricing">料金</a></li>
                         <li><a href="#why">選ばれる理由</a></li>
-                        <li><a href="#profile">プロフィール</a></li>
+                        <li><a href="#about">BenFitとは</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contact">お問い合わせ</a></li>
                     </ul>
@@ -1613,6 +1679,32 @@
                         <img src="profile-physique.jpeg" alt="BEST BODY JAPAN 大阪大会 入賞">
                     </div>
                     <div class="solution-badge">BEST BODY JAPAN 大阪大会</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (BenFitの由来) -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">BenFitの由来</h2>
+            
+            <div class="about-content animate-on-scroll">
+                <div class="about-name">
+                    <span class="about-name-main">BenFit</span>
+                    <span class="about-name-reading">ベンフィット</span>
+                </div>
+                
+                <div class="about-text">
+                    <p>「弁護士」の「弁（Ben）」と「Fitness」の「Fit」を組み合わせた造語です。</p>
+                    
+                    <p>私自身、弁護士として働きながらフィジーク競技に挑戦する中で、フィットネス業界には法的サポートを必要としながらも、どこに相談すればいいか分からない方が多いと感じてきました。</p>
+                    
+                    <p class="about-quote">「業界を知る弁護士に相談できれば、もっと安心して事業に集中できるはず」</p>
+                    
+                    <p>その想いから、BenFitは生まれました。</p>
+                    
+                    <p>また「Benefit（利益・恩恵）」という言葉にも通じるこの名前には、フィットネス業界で頑張る皆さまに、法的な「安心」と「利益」をもたらしたいという願いを込めています。</p>
                 </div>
             </div>
         </div>
