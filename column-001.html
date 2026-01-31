@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>「痛い」と言われたらどうする？トレーナーの安全配慮義務を考える｜BenFit コラム</title>
-    <meta name="description" content="トレーニング中に会員が痛みを訴えた場合、トレーナーはどう対応すべきか？実際の裁判例から学ぶ安全配慮義務と記録の重要性。">
+    <meta name="description" content="トレーニング中に会員が痛みを訴えた場合、トレーナーはどう対応すべきか？東京地裁平成26年6月13日判決から学ぶ安全配慮義務と記録の重要性。">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
@@ -135,6 +135,14 @@
             border-left: 4px solid var(--color-gold);
         }
 
+        .article-content h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-gold-light);
+        }
+
         .article-content p {
             color: var(--color-text-secondary);
             margin-bottom: var(--spacing-md);
@@ -180,28 +188,116 @@
             margin-bottom: var(--spacing-xs);
         }
 
+        .case-info-detail {
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+
+        .result-box {
+            background: var(--color-bg-tertiary);
+            border: 2px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .result-box .result-label {
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .result-box .result-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 0;
+        }
+
+        .reason-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .reason-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            width: 28px;
+            height: 28px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .advice-card {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .advice-card-title {
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: var(--spacing-xs);
+            font-size: 1rem;
+        }
+
+        .advice-card p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .summary-box {
+            background: var(--color-bg-tertiary);
+            border-left: 4px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .summary-box p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 0;
+        }
+
         .cta-box {
-            background: linear-gradient(135deg, rgba(212, 168, 83, 0.1) 0%, transparent 100%);
-            border: 1px solid var(--color-gold);
+            background: var(--color-bg-tertiary);
+            border: 2px solid var(--color-gold);
             padding: var(--spacing-lg);
-            margin-top: var(--spacing-xl);
+            margin-top: var(--spacing-lg);
             text-align: center;
         }
 
         .cta-box h3 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: var(--spacing-sm);
+            color: var(--color-gold);
         }
 
         .cta-box p {
-            color: var(--color-text-secondary);
+            color: var(--color-text-primary);
             margin-bottom: var(--spacing-md);
+            font-size: 1rem;
+            line-height: 1.8;
         }
 
         .btn {
             display: inline-block;
             padding: 1rem 2rem;
-            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
+            background: var(--color-gold);
             color: var(--color-bg-primary);
             font-weight: 700;
             transition: all 0.3s ease;
@@ -226,28 +322,13 @@
             color: var(--color-text-muted);
         }
 
-        .related-articles {
-            margin-top: var(--spacing-xl);
-            padding-top: var(--spacing-lg);
-            border-top: 1px solid var(--color-border);
-        }
-
-        .related-articles h3 {
-            font-size: 1.2rem;
-            margin-bottom: var(--spacing-md);
-        }
-
-        .related-link {
-            display: block;
-            padding: var(--spacing-sm);
-            background: var(--color-bg-secondary);
-            border: 1px solid var(--color-border);
-            margin-bottom: var(--spacing-sm);
-            transition: all 0.3s ease;
-        }
-
-        .related-link:hover {
-            border-color: var(--color-gold);
+        @media (max-width: 600px) {
+            .container {
+                padding: var(--spacing-md) var(--spacing-sm);
+            }
+            .article-title {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
@@ -268,34 +349,104 @@
         <h1 class="article-title">「痛い」と言われたらどうする？<br>トレーナーの安全配慮義務を考える</h1>
 
         <article class="article-content">
+            
+            <!-- 事案の概要 -->
+            <h2>事案の概要</h2>
+
             <div class="case-info">
                 <div class="case-info-title">📋 参考判例</div>
-                東京地裁 平成26年6月13日判決
+                <div class="case-info-detail">
+                    東京地裁 平成26年6月13日判決（平24（ワ）26097号）<br>
+                    損害賠償請求事件
+                </div>
             </div>
 
-            <h2>事例の概要</h2>
-            <p>スポーツクラブで、トレーナーの指導中に会員が「痛い」と訴えたにもかかわらず、レッグプレスなどのトレーニングを継続。その後、会員が腰椎椎間板障害を発症したとして、損害賠償を求めた裁判です。</p>
+            <p>スポーツクラブの会員（原告）が、パーソナルトレーニング中に痛みを訴えたにもかかわらず、担当トレーナーからトレーニングを強制され、腰椎椎間板障害等を発症・悪化したとして、スポーツクラブ運営会社に対し<strong>2,013万5,993円</strong>の損害賠償を求めた事案です。</p>
+            <p>原告は、トレーナーの使用者であるスポーツクラブ運営会社に対し、<strong>民法715条1項（使用者責任）</strong>に基づいて訴えを提起しました。</p>
 
-            <h2>裁判所の判断</h2>
-            <p>結論として、<strong>請求は棄却</strong>されました。</p>
-            <p>理由は、会員が痛みを訴えた後もトレーニングに継続参加していた点が「不自然」と認定されたためです。</p>
-            
-            <div class="highlight-box">
-                <p>ただし、この判決は<strong>トレーナーの安全配慮義務の重要性</strong>を改めて示すものでもあります。</p>
+            <!-- 争点 -->
+            <h2>争点</h2>
+
+            <h3>争点1：トレーナーの過失の有無</h3>
+            <p>原告がトレーニング中に痛みを訴えた事実はあるか。また、トレーナーがトレーニングを中止・変更すべき注意義務を怠り、不適切にトレーニングを継続させた（強制した）といえるか。</p>
+
+            <h3>争点2：因果関係の有無</h3>
+            <p>原告の症状（腰椎椎間板障害等）が本件トレーニングによって生じたものか。</p>
+
+            <!-- 結論 -->
+            <h2>結論</h2>
+
+            <div class="result-box">
+                <div class="result-label">裁判所の判断</div>
+                <p class="result-text">請求棄却</p>
             </div>
 
-            <h2>ジム経営者・トレーナーが学ぶべきこと</h2>
-            <p>今回は請求棄却でしたが、<strong>記録がなければ逆の結論になっていた可能性</strong>もあります。</p>
-            <p>「言った・言わない」の争いを防ぐため、以下の対策をおすすめします。</p>
+            <p>裁判所は、原告がトレーニング中に痛みを訴え、トレーナーがこれを無視して強制したという事実は認められないと判断しました。</p>
+
+            <!-- 理由 -->
+            <h2>理由</h2>
+            <p>裁判所が請求を棄却した主な理由は以下の通りです。</p>
+
+            <div class="reason-title">
+                <span class="reason-number">1</span>原告の行動の不自然さ
+            </div>
+            <p>原告は「下肢全体に電流が走るような激しい痛み」を感じたと主張しながらも、全8回の予約を一度もキャンセルせず受講。さらに、トレーニング前後には自主的にバイクやウォーキング（早足で20〜25分、50〜70キロカロリー消費）を継続していました。激しい痛みがあったという主張と矛盾すると判断されました。</p>
+
+            <div class="reason-title">
+                <span class="reason-number">2</span>受診時期の遅れと他の原因の可能性
+            </div>
+            <p>原告が病院を受診したのは、痛みを感じ始めたとする日から<strong>1か月半以上経過した9月6日</strong>でした。その間、芸術祭に参加して急斜面の丘を登る機会もあり、トレーニング以外の原因で症状が生じた可能性も否定できないとされました。</p>
+
+            <div class="reason-title">
+                <span class="reason-number">3</span>供述の矛盾・変遷
+            </div>
+            <p>痛みを感じたタイミング（7月20日か22日か）、部位（下肢全体か左下肢のみか）、原因となったマシンの動作に関する原告の供述には矛盾や不自然な変遷が見られ、信用できないと判断されました。また、「電流が走るような痛み」を筋肉痛と思い込んで耐え続けたという主張も、常識的に信用できないとされました。</p>
+
+            <div class="reason-title">
+                <span class="reason-number">4</span>トレーナーの柔軟な対応
+            </div>
+            <p>実際には、トレーナーは原告の要望に応じて柔軟に対応していました。</p>
             <ul>
-                <li><strong>トレーニングログを毎回記録する</strong>（日時、内容、会員の様子）</li>
-                <li><strong>痛みや不調の訴えがあった場合は必ず記録に残す</strong></li>
-                <li><strong>継続の判断は会員の自己責任と書面で確認する</strong></li>
+                <li>「マット運動は分かりづらい」と言われた際にメニューから除外</li>
+                <li>「自分でマシンを使ってトレーニングしたい」という要望に応じてマシンの使用方法を指導</li>
+                <li>「山歩きで足がぐちゃぐちゃになった」と言われ、下半身のトレーニングを実施せず上半身のみに変更</li>
             </ul>
+            <p>トレーナーが原告の意見を無視して無理強いした事実は認められませんでした。</p>
 
-            <h2>まとめ</h2>
-            <p>記録は、トレーナー自身を守る「盾」になります。万が一のトラブルに備え、日々のトレーニングログを習慣化しましょう。</p>
+            <div class="reason-title">
+                <span class="reason-number">5</span>苦情申し立ての欠如
+            </div>
+            <p>原告は自身の意見をはっきり言う性格であり、携帯電話を紛失した際にはスタッフにきつい口調で不満を述べていました。しかし、トレーニング期間中、フロントや他のスタッフに対してトレーナーの指導への不満や痛みを訴えた事実は確認されませんでした。</p>
 
+            <!-- 注意点 -->
+            <h2>注意点：ジム経営者・トレーナーが学ぶべきこと</h2>
+
+            <div class="highlight-box">
+                <p>本件は請求棄却となりましたが、<strong>記録がなければ逆の結論になっていた可能性があります。</strong></p>
+            </div>
+
+            <p>以下の対策を日頃から実践しましょう。</p>
+
+            <div class="advice-card">
+                <div class="advice-card-title">1. トレーニング記録（実施ログ）を詳細に残す</div>
+                <p>本件では、トレーナーが作成した「トレーニング表」が重要な証拠となりました。どの種目を実施し、どのような負荷をかけたか、また利用者の要望に応じてメニューをどう変更したかを記録していたことが、不適切な強制指導を否定する根拠となりました。</p>
+            </div>
+
+            <div class="advice-card">
+                <div class="advice-card-title">2. コミュニケーションと柔軟な対応を記録する</div>
+                <p>「マット運動は分かりづらい」と言われてメニューから除外したこと、「上半身のみのトレーニング」に変更したことなど、利用者の要望に応じた対応を記録に残しておくことで、「利用者の声を無視した」という主張を否定できます。</p>
+            </div>
+
+            <div class="advice-card">
+                <div class="advice-card-title">3. 利用者の体調確認とカウンセリングを徹底する</div>
+                <p>毎回のトレーニング前後に利用者の健康状態を確認し、記録に残しておくことが重要です。これがトラブルの未然防止と、万が一の際の法的防衛につながります。</p>
+            </div>
+
+            <div class="summary-box">
+                <p>記録は、トレーナー自身を守る「盾」になります。</p>
+            </div>
+
+            <!-- CTA -->
             <div class="cta-box">
                 <h3>契約書・規約の整備はできていますか？</h3>
                 <p>トレーニングログの記録方法、免責条項の書き方など、<br>フィットネス業界に詳しい弁護士がアドバイスします。</p>
