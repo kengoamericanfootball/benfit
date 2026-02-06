@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打撃投手にヘッドギアは必須？高校野球部の安全配慮義務違反が認められた事例｜BenFit コラム</title>
+    <meta name="description" content="高校野球部の打撃練習中、投手用ヘッドギアを着用させなかったことが安全配慮義務違反と認定された事例。福岡地裁小倉支部令和4年1月20日判決を解説。">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KNY9CC6DX9');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #111111;
+            --color-bg-tertiary: #1a1a1a;
+            --color-gold: #d4a853;
+            --color-gold-light: #e8c878;
+            --color-text-primary: #ffffff;
+            --color-text-secondary: #a0a0a0;
+            --color-text-muted: #666666;
+            --color-border: #2a2a2a;
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Noto Sans JP', sans-serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --transition-fast: 0.2s ease;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        a:hover {
+            color: var(--color-gold-light);
+        }
+
+        .header {
+            background: var(--color-bg-secondary);
+            border-bottom: 1px solid var(--color-border);
+            padding: var(--spacing-sm) var(--spacing-md);
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--color-gold);
+        }
+
+        .back-link {
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .article-category {
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .article-title {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .article-content h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            padding-left: var(--spacing-sm);
+            border-left: 4px solid var(--color-gold);
+        }
+
+        .article-content h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-gold-light);
+        }
+
+        .article-content p {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .article-content ul {
+            color: var(--color-text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .article-content li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .article-content strong {
+            color: var(--color-text-primary);
+        }
+
+        .highlight-box {
+            background: var(--color-bg-tertiary);
+            border-left: 4px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--color-text-primary);
+        }
+
+        .case-info {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            font-size: 0.9rem;
+        }
+
+        .case-info-title {
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .case-info-detail {
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+
+        .result-box {
+            background: var(--color-bg-tertiary);
+            border: 2px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .result-box .result-label {
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .result-box .result-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 0;
+        }
+
+        .result-box .result-sub {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            margin-top: var(--spacing-xs);
+        }
+
+        .reason-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .reason-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            width: 28px;
+            height: 28px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .advice-card {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .advice-card-title {
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: var(--spacing-xs);
+            font-size: 1rem;
+        }
+
+        .advice-card p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .summary-box {
+            background: var(--color-bg-tertiary);
+            border-left: 4px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .summary-box p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 0;
+        }
+
+        .cta-box {
+            background: var(--color-bg-tertiary);
+            border: 2px solid var(--color-gold);
+            padding: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-gold);
+        }
+
+        .cta-box p {
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 168, 83, 0.3);
+            color: var(--color-bg-primary);
+        }
+
+        .disclaimer {
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .disclaimer p {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .footer {
+            background: var(--color-bg-secondary);
+            border-top: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            text-align: center;
+            margin-top: var(--spacing-lg);
+        }
+
+        .footer-copyright {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: var(--spacing-md) var(--spacing-sm);
+            }
+            .article-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">BEN<span>FIT</span></a>
+            <a href="index.html#column" class="back-link">← コラム一覧に戻る</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="article-meta">
+            <span class="article-category">判例解説</span>
+            <span>2025年2月6日</span>
+        </div>
+        
+        <h1 class="article-title">打撃投手にヘッドギアは必須？<br>高校野球部の安全配慮義務違反が認められた事例</h1>
+
+        <article class="article-content">
+            
+            <!-- 事案の概要 -->
+            <h2>事案の概要</h2>
+
+            <div class="case-info">
+                <div class="case-info-title">📋 参考判例</div>
+                <div class="case-info-detail">
+                    福岡地裁小倉支部 令和4年1月20日判決（令2（ワ）940号）<br>
+                    損害賠償請求事件
+                </div>
+            </div>
+
+            <p>県立高校の野球部員（当時17歳）が、部活動の打撃練習中に打撃投手を務めていたところ、打者が打ち返した硬球が右側頭部に直撃。<strong>外傷性くも膜下出血、脳挫傷、右側感音性難聴・内耳機能障害</strong>等の重傷を負った事案です。</p>
+            <p>被害者は、部活動顧問の安全配慮義務違反を主張し、県に対し国家賠償法1条1項に基づき<strong>約2,492万円</strong>の損害賠償を請求しました。</p>
+
+            <!-- 争点 -->
+            <h2>争点</h2>
+
+            <h3>争点1：顧問教諭の安全配慮義務違反の有無</h3>
+            <p>打撃練習時に投手用ヘッドギアを着用させなかったことが、安全配慮義務違反に当たるか。</p>
+
+            <h3>争点2：過失相殺の適否</h3>
+            <p>被害者がL字ネットの適切な位置で投球しなかったことを理由に、過失相殺すべきか。</p>
+
+            <!-- 結論 -->
+            <h2>結論</h2>
+
+            <div class="result-box">
+                <div class="result-label">裁判所の判断</div>
+                <p class="result-text">約2,261万円の損害賠償を認容</p>
+                <p class="result-sub">過失相殺は否定</p>
+            </div>
+
+            <p>裁判所は、顧問教諭の安全配慮義務違反を認め、過失相殺も否定しました。</p>
+
+            <!-- 理由 -->
+            <h2>理由</h2>
+
+            <div class="reason-title">
+                <span class="reason-number">1</span>安全配慮義務違反について
+            </div>
+            <ul>
+                <li>高野連（日本高等学校野球連盟）は、打撃練習時に投手用ヘッドギアの着用を義務付けている</li>
+                <li>年に一度教諭に配布される「指導者必携」にもその旨が記載され周知されている</li>
+                <li>しかし、顧問教諭はヘッドギア着用義務があることを知らず、学校には投手用ヘッドギアが存在しなかった</li>
+                <li>本件の打撃練習は、通常の投手−打者間の距離（18.44m）より短い約15mで行われており、打球を回避する時間が極めて短かった</li>
+            </ul>
+            <p>以上から、顧問教諭には投手用ヘッドギアを着用させるべき義務があったにもかかわらず、これを怠った<strong>安全配慮義務違反がある</strong>と認定されました。</p>
+
+            <div class="reason-title">
+                <span class="reason-number">2</span>過失相殺の否定について
+            </div>
+            <p>被告（県）は、「被害者がL字ネットの適切な位置で投球しなかったことが事故原因である」として過失相殺を主張しました。</p>
+            <p>しかし、裁判所は以下の理由から<strong>過失相殺を否定</strong>しました。</p>
+            <ul>
+                <li>ヘッドギアを着用していれば、本件事故は防げた可能性が高い</li>
+                <li>打球のスピードと距離からすると、打撃投手が打球を完全に回避するのは困難</li>
+                <li>高校生である被害者が部活動中に注意力が散漫になることは通常予想される範囲内</li>
+            </ul>
+
+            <!-- 注意点 -->
+            <h2>注意点：ジム経営者・トレーナーが学ぶべきこと</h2>
+
+            <div class="highlight-box">
+                <p>本件は高校の部活動の事例ですが、<strong>民間のジムやスポーツ施設にも通じる重要な教訓</strong>があります。</p>
+            </div>
+
+            <div class="advice-card">
+                <div class="advice-card-title">1. 業界団体のルール・ガイドラインを把握する</div>
+                <p>本件では、高野連がヘッドギア着用を義務付けていたにもかかわらず、顧問教諭がそのルールを知らなかったことが問題となりました。フィットネス業界でも、業界団体のガイドラインや安全基準を把握し、遵守することが重要です。</p>
+            </div>
+
+            <div class="advice-card">
+                <div class="advice-card-title">2. 安全器具・設備を整備する</div>
+                <p>「これまで事故がなかったから大丈夫」という考えは危険です。本件でも、事故が起きるまでヘッドギアなしで練習が行われていました。事故が起きてからでは遅いのです。</p>
+            </div>
+
+            <div class="advice-card">
+                <div class="advice-card-title">3. 「利用者の不注意」は免責理由にならない</div>
+                <p>被告は「被害者が適切な位置で投球しなかった」と主張しましたが、裁判所は過失相殺を認めませんでした。利用者のミスや不注意があっても、施設側の安全配慮義務違反があれば責任を免れません。</p>
+            </div>
+
+            <div class="summary-box">
+                <p>安全対策は「事故が起きる前」に整備することが大切です。</p>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-box">
+                <h3>安全管理体制の整備はできていますか？</h3>
+                <p>事故防止マニュアルの作成、免責条項の書き方など、<br>フィットネス業界に詳しい弁護士がアドバイスします。</p>
+                <a href="index.html#contact" class="btn">無料で相談する</a>
+            </div>
+
+            <!-- 免責条項 -->
+            <div class="disclaimer">
+                <p>※ 本コラムは、裁判例の紹介を目的とした一般的な情報提供であり、法的助言を構成するものではありません。個別の事案では、事実関係や証拠の内容等により結論が異なる場合があります。具体的な法的問題については、必ず弁護士にご相談ください。</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copyright">&copy; 2025 BenFit. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
