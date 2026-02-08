@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>そのブランド、誰のもの？パーソナルジム商標トラブルから学ぶ経営リスク｜BenFit コラム</title>
+    <meta name="description" content="女性向けパーソナルジムの商標をめぐる訴訟を解説。事業譲渡後のブランド権利、不使用取消審判のリスク、契約書の重要性を学ぶ。">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KNY9CC6DX9');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #111111;
+            --color-bg-tertiary: #1a1a1a;
+            --color-gold: #d4a853;
+            --color-gold-light: #e8c878;
+            --color-text-primary: #ffffff;
+            --color-text-secondary: #a0a0a0;
+            --color-text-muted: #666666;
+            --color-border: #2a2a2a;
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Noto Sans JP', sans-serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --transition-fast: 0.2s ease;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        a:hover {
+            color: var(--color-gold-light);
+        }
+
+        .header {
+            background: var(--color-bg-secondary);
+            border-bottom: 1px solid var(--color-border);
+            padding: var(--spacing-sm) var(--spacing-md);
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--color-gold);
+        }
+
+        .back-link {
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .article-category {
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .article-title {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .article-content h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            padding-left: var(--spacing-sm);
+            border-left: 4px solid var(--color-gold);
+        }
+
+        .article-content h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-gold-light);
+        }
+
+        .article-content p {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .article-content ul {
+            color: var(--color-text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .article-content li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .article-content strong {
+            color: var(--color-text-primary);
+        }
+
+        .highlight-box {
+            background: var(--color-bg-tertiary);
+            border-left: 4px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--color-text-primary);
+        }
+
+        .case-info {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            font-size: 0.9rem;
+        }
+
+        .case-info-title {
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .case-info-detail {
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+
+        .result-box {
+            background: var(--color-bg-tertiary);
+            border: 2px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .result-box .result-label {
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .result-box .result-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 0;
+        }
+
+        .result-box .result-sub {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            margin-top: var(--spacing-xs);
+        }
+
+        .reason-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .reason-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            width: 28px;
+            height: 28px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .fact-card {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .fact-card-title {
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: var(--spacing-xs);
+            font-size: 0.95rem;
+        }
+
+        .fact-card p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .advice-card {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .advice-card-title {
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: var(--spacing-xs);
+            font-size: 1rem;
+        }
+
+        .advice-card p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .advice-card ul {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .summary-box {
+            background: var(--color-bg-tertiary);
+            border-left: 4px solid var(--color-gold);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            text-align: center;
+        }
+
+        .summary-box p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 0;
+        }
+
+        .cta-box {
+            background: var(--color-bg-tertiary);
+            border: 2px solid var(--color-gold);
+            padding: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-gold);
+        }
+
+        .cta-box p {
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 168, 83, 0.3);
+            color: var(--color-bg-primary);
+        }
+
+        .disclaimer {
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .disclaimer p {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .footer {
+            background: var(--color-bg-secondary);
+            border-top: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            text-align: center;
+            margin-top: var(--spacing-lg);
+        }
+
+        .footer-copyright {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: var(--spacing-md) var(--spacing-sm);
+            }
+            .article-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">BEN<span>FIT</span></a>
+            <a href="index.html#column" class="back-link">← コラム一覧に戻る</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="article-meta">
+            <span class="article-category">判例解説</span>
+            <span>2025年2月8日</span>
+        </div>
+        
+        <h1 class="article-title">そのブランド、誰のもの？<br>パーソナルジム商標トラブルから学ぶ経営リスク</h1>
+
+        <article class="article-content">
+            
+            <p>パーソナルジムを開業するとき、屋号やロゴを考えますよね。でも、そのブランド名の「権利」について、きちんと整理できていますか？</p>
+            <p>今回は、女性向けパーソナルジムの商標をめぐり、事業譲渡後に起きたトラブルを解説します。</p>
+
+            <!-- 事案の概要 -->
+            <h2>事案の概要</h2>
+
+            <div class="case-info">
+                <div class="case-info-title">📋 参考判例</div>
+                <div class="case-info-detail">
+                    東京地裁 令和2年7月30日判決（平成30年（ワ）第2216号）<br>
+                    損害賠償請求事件
+                </div>
+            </div>
+
+            <p>女性向けダイエット・ボディメイクのパーソナルトレーニングジムを運営する会社（原告）が、商標権と経営ノウハウを別会社（被告会社）にライセンス・譲渡しました。</p>
+            
+            <p>ところが、顧問料の支払いをめぐって譲渡契約が解除された後も、被告会社が同ブランドを使い続けたため、<strong>商標権の返還を求める訴訟</strong>に発展。</p>
+            
+            <p>その訴訟の最中、被告会社と第三者が共謀して<strong>商標の不使用取消審判</strong>を申し立て、原告の商標権を消滅させてしまいました。</p>
+            
+            <p>原告は、消滅した商標権を回復するために再審請求や審決取消訴訟を行い、その<strong>弁護士費用の損害賠償</strong>を求めて提訴しました。</p>
+
+            <!-- 争点 -->
+            <h2>争点</h2>
+
+            <h3>争点1：被告らの共同不法行為の成否</h3>
+            <p>被告会社・代表者・第三者が共謀して、原告を害する目的で不使用取消審判を利用し、商標権を消滅させた行為は不法行為に当たるか。</p>
+
+            <h3>争点2：損害の有無と金額</h3>
+            <p>原告が商標権を回復するために支出した弁護士費用は、被告らの不法行為と因果関係のある損害か。</p>
+
+            <!-- 結論 -->
+            <h2>結論</h2>
+
+            <div class="result-box">
+                <div class="result-label">裁判所の判断</div>
+                <p class="result-text">429万6000円の損害賠償を認容</p>
+                <p class="result-sub">共同不法行為の成立を認定</p>
+            </div>
+
+            <p>裁判所は、被告らが共謀して原告を害する目的で商標権を消滅させたと認定し、共同不法行為の成立を認めました。</p>
+
+            <!-- 理由 -->
+            <h2>裁判所が認定した事実</h2>
+
+            <p>裁判所は、以下の事情から<strong>「被告らの共謀」</strong>を認定しました。</p>
+
+            <div class="fact-card">
+                <div class="fact-card-title">① 不自然なタイミングでの不使用取消審判請求</div>
+                <p>商標権の返還訴訟が係属中に、第三者が不使用取消審判を申し立てた。</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="fact-card-title">② 被告会社が答弁しなかった</div>
+                <p>被告会社は代理人弁理士を選任したにもかかわらず、審判で一切答弁せず、商標権の取消しを確定させた。</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="fact-card-title">③ 取消確定直後に同一商標を再出願</div>
+                <p>被告会社は、商標権が消滅してからわずか2週間後に、全く同一の商標を自社名義で出願した。</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="fact-card-title">④ 原告への通知を意図的に遅らせた</div>
+                <p>被告会社は、取消審決や再出願の事実を、和解交渉のカードとして使うまで原告に知らせなかった。</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="fact-card-title">⑤ 関連訴訟での共謀認定</div>
+                <p>関連する審決取消訴訟で、知財高裁は「被告会社と第三者が共謀して商標権を害する目的で審決をさせた」と認定。この判決は確定している。</p>
+            </div>
+
+            <!-- 注意点 -->
+            <h2>注意点：ジム経営者・トレーナーが学ぶべきこと</h2>
+
+            <div class="highlight-box">
+                <p>本件は商標をめぐる複雑な訴訟ですが、<strong>フランチャイズ・業務提携・独立開業</strong>を考えるすべてのジム経営者・トレーナーに重要な教訓があります。</p>
+            </div>
+
+            <div class="advice-card">
+                <div class="advice-card-title">1. ブランド名・ロゴ・メソッドは「資産」として契約で守る</div>
+                <p>事業譲渡やフランチャイズ契約では、以下を明文化しましょう。</p>
+                <ul>
+                    <li>商標権は誰が持つか</li>
+                    <li>契約終了後にブランドをどう扱うか</li>
+                    <li>類似の名称やコンセプトの使用制限</li>
+                </ul>
+            </div>
+
+            <div class="advice-card">
+                <div class="advice-card-title">2. 独立・提携・譲渡時は「終了後」を必ず設計する</div>
+                <p>トレーナーやパートナーにブランドを使わせる場合、契約終了後の取り扱いを事前に決めておかないと、本件のような紛争に発展します。「円満に終わるはず」という期待は禁物です。</p>
+            </div>
+
+            <div class="advice-card">
+                <div class="advice-card-title">3. 商標登録だけでなく「使用実績」も維持する</div>
+                <p>商標は登録しただけでは不十分です。<strong>3年以上使用しないと、第三者から不使用取消審判を請求される可能性</strong>があります。事業再編や譲渡で運営主体が変わった場合も、商標の名義と実際の使用者が一致しているか確認しましょう。</p>
+            </div>
+
+            <div class="summary-box">
+                <p>パーソナルジムのブランドは、人ではなく<br>「契約」と「商標」で守るべき資産です。</p>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-box">
+                <h3>ブランドの権利関係、曖昧になっていませんか？</h3>
+                <p>フランチャイズ契約書のチェック、商標出願のご相談など、<br>フィットネス業界に詳しい弁護士がアドバイスします。</p>
+                <a href="index.html#contact" class="btn">無料で相談する</a>
+            </div>
+
+            <!-- 免責条項 -->
+            <div class="disclaimer">
+                <p>※ 本コラムは、裁判例の紹介を目的とした一般的な情報提供であり、法的助言を構成するものではありません。個別の事案では、事実関係や証拠の内容等により結論が異なる場合があります。具体的な法的問題については、必ず弁護士にご相談ください。</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copyright">&copy; 2025 BenFit. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
