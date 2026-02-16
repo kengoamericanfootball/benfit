@@ -686,6 +686,62 @@
         }
 
         /* ========================================
+           Legal Topics Section (専門論点)
+        ======================================== */
+        .legal-topics {
+            background: var(--color-bg-tertiary);
+            position: relative;
+        }
+
+        .legal-topics-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto var(--spacing-lg);
+        }
+
+        .legal-topics-intro p {
+            color: var(--color-text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .legal-topics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        .legal-topic-card {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            transition: all var(--transition-normal);
+        }
+
+        .legal-topic-card:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-4px);
+        }
+
+        .legal-topic-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-gold);
+        }
+
+        .legal-topic-card p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .legal-topics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========================================
            Why Section
         ======================================== */
         .why {
@@ -1635,11 +1691,11 @@
                 鍛える弁護士が、<span class="highlight">ジムを守る。</span>
             </h1>
             <p class="hero-subtitle">
-                フィットネス業界を知り尽くした弁護士による法務サポート。<br>
+                パーソナルジム・トレーナー専門の予防法務サポート。<br>
                 契約書作成・トラブル対応・労務相談まで、まるごとお任せください。
             </p>
             <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary"><span>無料で相談する</span></a>
+                <a href="#contact" class="btn btn-primary"><span>まずは話してみる</span></a>
             </div>
         </div>
     </section>
@@ -1856,6 +1912,49 @@
                         <span class="service-tag">債権回収</span>
                         <span class="service-tag">その他</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Topics Section (専門論点) -->
+    <section class="legal-topics section" id="legal-topics">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">ジム経営で問題になりやすい<br>法的論点</h2>
+            
+            <div class="legal-topics-intro animate-on-scroll">
+                <p>フィットネス業界には、他業種とは異なる特有のリスクがあります。<br>以下のような問題に対応できる体制は整っていますか？</p>
+            </div>
+
+            <div class="legal-topics-grid">
+                <div class="legal-topic-card animate-on-scroll">
+                    <h3>会員の怪我と安全配慮義務</h3>
+                    <p>トレーニング中の怪我、施設内での転倒事故など。施設側にどこまでの注意義務があるか、免責条項はどこまで有効かが問われます。</p>
+                </div>
+
+                <div class="legal-topic-card animate-on-scroll">
+                    <h3>退会時の返金トラブル</h3>
+                    <p>中途解約時の返金ルール、回数券の有効期限、特定商取引法との関係など。規約の書き方一つで結論が変わります。</p>
+                </div>
+
+                <div class="legal-topic-card animate-on-scroll">
+                    <h3>業務委託トレーナーとの契約</h3>
+                    <p>雇用か業務委託か、競業避止義務、引き抜き防止など。契約形態の選択と契約書の内容が重要です。</p>
+                </div>
+
+                <div class="legal-topic-card animate-on-scroll">
+                    <h3>個人情報・プライバシー管理</h3>
+                    <p>会員の身体データ、ビフォーアフター写真の利用など。同意の取り方と管理体制の整備が必要です。</p>
+                </div>
+
+                <div class="legal-topic-card animate-on-scroll">
+                    <h3>商標・ブランド保護</h3>
+                    <p>屋号やロゴの商標登録、フランチャイズ契約、独立時のブランド使用制限など。事業拡大時に問題になりやすい論点です。</p>
+                </div>
+
+                <div class="legal-topic-card animate-on-scroll">
+                    <h3>クレーム・カスハラ対応</h3>
+                    <p>悪質なクレーマーへの対応、SNSでの誹謗中傷、不当な返金要求など。初期対応と記録の残し方が重要です。</p>
                 </div>
             </div>
         </div>
@@ -2233,7 +2332,7 @@
     <section class="cta section" id="contact">
         <div class="container">
             <div class="cta-content animate-on-scroll">
-                <h2 class="cta-title">まずは<span class="gold-text">無料</span>でご相談ください</h2>
+                <h2 class="cta-title">ジム経営の法務について、<br><span class="gold-text">気軽に聞いてみませんか？</span></h2>
                 <p class="cta-subtitle">
                     「こんなこと聞いていいのかな」という内容でも大丈夫です。<br>
                     フィットネス業界のことが分かる弁護士が、あなたの状況に合わせてお答えします。
@@ -2243,7 +2342,7 @@
                         <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="margin-right: 8px;">
                             <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.349 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
                         </svg>
-                        LINEで相談する
+                        LINEで気軽に聞いてみる
                     </a>
                 </div>
             </div>
