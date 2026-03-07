@@ -2,37 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kengoamericanfootball.github.io/benfit/</loc>
-    <lastmod>2025-03-01</lastmod>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://kengoamericanfootball.github.io/benfit/column-007.html</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kengoamericanfootball.github.io/benfit/column-006.html</loc>
-    <lastmod>2025-03-01</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kengoamericanfootball.github.io/benfit/column-005.html</loc>
-    <lastmod>2025-02-22</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kengoamericanfootball.github.io/benfit/column-004.html</loc>
-    <lastmod>2025-02-15</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kengoamericanfootball.github.io/benfit/column-003.html</loc>
-    <lastmod>2025-02-08</lastmod>
+    <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kengoamericanfootball.github.io/benfit/column-002.html</loc>
-    <lastmod>2025-02-06</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「店長だから残業代なし」は通用しない？管理監督者の落とし穴｜BenFit コラム</title>
+    <meta name="description" content="スポーツクラブの支店長が管理監督者に当たらないとされた東京高裁判決を解説。ジム経営者が知っておくべき「名ばかり管理職」リスクと対策をフィットネス業界専門の弁護士が解説。">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KNY9CC6DX9');
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #111111;
+            --color-bg-tertiary: #1a1a1a;
+            --color-gold: #d4a853;
+            --color-gold-light: #e8c878;
+            --color-text-primary: #ffffff;
+            --color-text-secondary: #a0a0a0;
+            --color-text-muted: #666666;
+            --color-border: #2a2a2a;
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Noto Sans JP', sans-serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --transition-fast: 0.2s ease;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.8;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        .site-header {
+            background: var(--color-bg-secondary);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .site-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+        .back-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color var(--transition-fast);
+        }
+        .back-link:hover {
+            color: var(--color-gold);
+        }
+
+        /* Article */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: var(--spacing-md);
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+        .article-category {
+            background: rgba(212, 168, 83, 0.15);
+            color: var(--color-gold);
+            padding: 0.25rem 0.75rem;
+            border-radius: 2px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .article-title {
+            font-family: var(--font-body);
+            font-size: 1.75rem;
+            font-weight: 900;
+            line-height: 1.4;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text-primary);
+        }
+        .article-title .highlight {
+            color: var(--color-gold);
+        }
+
+        .article-lead {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        /* Content sections */
+        .section-heading {
+            font-family: var(--font-body);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            padding-left: 0.75rem;
+            border-left: 3px solid var(--color-gold);
+        }
+
+        .sub-heading {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--color-gold-light);
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        strong {
+            color: var(--color-text-primary);
+            font-weight: 700;
+        }
+
+        /* Case info box */
+        .case-info {
+            background: var(--color-bg-tertiary);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin: var(--spacing-md) 0;
+        }
+        .case-info-label {
+            font-size: 0.75rem;
+            color: var(--color-gold);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+        .case-info p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Result box */
+        .result-box {
+            background: rgba(212, 168, 83, 0.08);
+            border: 1px solid rgba(212, 168, 83, 0.3);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin: var(--spacing-md) 0;
+        }
+        .result-box-label {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+        }
+        .result-box p {
+            color: var(--color-text-primary);
+            font-weight: 500;
+        }
+
+        /* Table */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--spacing-sm) 0 var(--spacing-md);
+            font-size: 0.9rem;
+        }
+        .info-table th,
+        .info-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .info-table th {
+            color: var(--color-gold-light);
+            font-weight: 500;
+            width: 35%;
+            background: var(--color-bg-tertiary);
+        }
+        .info-table td {
+            color: var(--color-text-secondary);
+        }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            margin: var(--spacing-sm) 0 var(--spacing-md);
+            padding: 0;
+        }
+        .checklist li {
+            padding: 0.5rem 0 0.5rem 2rem;
+            position: relative;
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+        }
+        .checklist li::before {
+            content: '☐';
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-size: 1.1rem;
+        }
+
+        /* Numbered list */
+        .numbered-list {
+            list-style: none;
+            counter-reset: item;
+            margin: var(--spacing-sm) 0 var(--spacing-md);
+            padding: 0;
+        }
+        .numbered-list li {
+            counter-increment: item;
+            padding: 0.75rem 0 0.75rem 2.5rem;
+            position: relative;
+            color: var(--color-text-secondary);
+        }
+        .numbered-list li::before {
+            content: counter(item);
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: rgba(212, 168, 83, 0.15);
+            color: var(--color-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .numbered-list li strong {
+            display: block;
+            color: var(--color-text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: rgba(220, 53, 69, 0.08);
+            border: 1px solid rgba(220, 53, 69, 0.3);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin: var(--spacing-md) 0;
+        }
+        .warning-box p {
+            color: #e8a0a0;
+        }
+        .warning-box strong {
+            color: #f0c0c0;
+        }
+
+        /* Key point box */
+        .key-point {
+            background: var(--color-bg-tertiary);
+            border-left: 3px solid var(--color-gold);
+            padding: 1.25rem 1.5rem;
+            margin: var(--spacing-md) 0;
+        }
+        .key-point p {
+            color: var(--color-text-primary);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        /* Summary */
+        .summary-section {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            padding: 2rem;
+            margin: var(--spacing-lg) 0;
+        }
+        .summary-section .section-heading {
+            margin-top: 0;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.1) 0%, rgba(212, 168, 83, 0.05) 100%);
+            border: 1px solid rgba(212, 168, 83, 0.2);
+            border-radius: 4px;
+            padding: 2rem;
+            margin: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        .cta-section h3 {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: 0.75rem;
+        }
+        .cta-section p {
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--color-gold);
+            color: var(--color-bg-primary);
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-radius: 2px;
+            transition: all var(--transition-fast);
+        }
+        .cta-button:hover {
+            background: var(--color-gold-light);
+            transform: translateY(-1px);
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            margin-top: var(--spacing-lg);
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--color-border);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--color-bg-secondary);
+            border-top: 1px solid var(--color-border);
+            padding: 2rem 0;
+            margin-top: var(--spacing-lg);
+            text-align: center;
+        }
+        .footer-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .footer-brand {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--color-gold);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .footer-text {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .article-title {
+                font-size: 1.35rem;
+            }
+            .section-heading {
+                font-size: 1.1rem;
+            }
+            .info-table th,
+            .info-table td {
+                padding: 0.5rem;
+                font-size: 0.85rem;
+            }
+            .info-table th {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="https://kengoamericanfootball.github.io/benfit/" class="site-logo">BenFit</a>
+            <a href="https://kengoamericanfootball.github.io/benfit/#columns" class="back-link">← コラム一覧に戻る</a>
+        </div>
+    </header>
+
+    <!-- Article -->
+    <article class="article-container">
+
+        <!-- Meta -->
+        <div class="article-meta">
+            <span class="article-category">判例解説</span>
+            <span>2026.03.07</span>
+            <span>COLUMN #007</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="article-title">
+            「店長だから残業代なし」は<span class="highlight">通用しない</span>？<br>
+            管理監督者の落とし穴
+        </h1>
+
+        <!-- Lead -->
+        <p class="article-lead">
+            「うちのマネージャーは管理職だから、残業代は払わなくていい」——そう思っていませんか？この認識が原因で、数百万円単位の未払い残業代を請求されるケースがフィットネス業界でも現実に起きています。全国チェーンのスポーツクラブ支店長が「管理監督者」にあたらないとされた裁判例を解説します。
+        </p>
+
+        <!-- Case Info -->
+        <div class="case-info">
+            <div class="case-info-label">参考判例</div>
+            <p><strong>東京高裁 平成30年11月22日判決</strong></p>
+            <p>コナミスポーツクラブ事件（一審：横浜地裁川崎支部）</p>
+            <p>全国展開のスポーツクラブ（従業員約1万3,000人）の支店長（GM職）が管理監督者にあたるかが争われた事案</p>
+        </div>
+
+        <!-- Section: Overview -->
+        <h2 class="section-heading">事案の概要</h2>
+
+        <p>全国チェーンのスポーツクラブで約7年間にわたり支店長（GM職）を務めていた従業員が、「管理監督者」として残業代・休日手当を一切支払われていなかったことを不服として、会社に未払い残業代の支払いを求めた事案です。</p>
+
+        <p>会社側は、GM職を「管理監督の地位にある者」として扱い、<strong>残業代・休日手当を一切支払っていませんでした。</strong></p>
+
+        <h3 class="sub-heading">支店長の実態</h3>
+
+        <table class="info-table">
+            <tr><th>役職手当</th><td>月額5万円のみ</td></tr>
+            <tr><th>残業時間</th><td>月平均41時間超</td></tr>
+            <tr><th>採用・解雇権限</th><td>人事部長の決裁が必要</td></tr>
+            <tr><th>営業時間の変更</th><td>独自判断不可</td></tr>
+            <tr><th>出退勤管理</th><td>タイムカード打刻あり（一般社員と同様）</td></tr>
+            <tr><th>上位からの指揮命令</th><td>エリアマネージャーを通じて日常的に受けていた</td></tr>
+        </table>
+
+        <!-- Section: Result -->
+        <h2 class="section-heading">裁判所の判断</h2>
+
+        <div class="result-box">
+            <div class="result-box-label">RESULT</div>
+            <p><strong>支店長は「管理監督者」にあたらない</strong>と判断。</p>
+            <p>未払い残業代の支払いに加え、付加金（ペナルティ）として約90万円の支払いを命じました。</p>
+        </div>
+
+        <!-- Section: 3 Criteria -->
+        <h2 class="section-heading">「管理監督者」の3つの判断基準</h2>
+
+        <p>裁判所は、管理監督者かどうかを次の3つの視点で判断します。</p>
+
+        <ol class="numbered-list">
+            <li>
+                <strong>経営者と一体的な立場にあるほどの権限・責任があるか</strong>
+                単に「店長」「マネージャー」という肩書きがあるだけでは不十分です。本件では、アルバイトの採用・解雇に本部の承認が必要で、サービス内容や営業時間も独自に決定できず、上位から日常的に指示を受けていました。
+            </li>
+            <li>
+                <strong>自分の裁量で労働時間を管理できるか</strong>
+                管理監督者は「労働時間の規制になじまない働き方」をしている必要があります。本件では、タイムカードで出退勤を記録し、月41時間超の残業が常態化していました。
+            </li>
+            <li>
+                <strong>管理監督者にふさわしい待遇を受けているか</strong>
+                割増賃金が支払われない分、それを上回る相応の処遇が必要です。本件では、役職手当がわずか月5万円で、残業代を含めた賃金総額が一般社員と大差ありませんでした。
+            </li>
+        </ol>
+
+        <!-- Section: Fitness Industry Risk -->
+        <h2 class="section-heading">フィットネス業界が特に注意すべきポイント</h2>
+
+        <div class="key-point">
+            <p>本判決は「多店舗展開する大型チェーンでは、店舗独自の工夫をする余地は少なく、経営方針に関与する機会も乏しいため、管理監督者として認められる余地は少ない」と指摘しています。</p>
+        </div>
+
+        <p>つまり、本部がメニュー・価格・サービス内容を決める多店舗チェーン型のジム・スタジオでは、<strong>現場の店長・マネージャーが管理監督者に認定されるケースは極めて稀</strong>と考えてください。</p>
+
+        <p>パーソナルジムや複数店舗展開のスタジオを経営している方にとって、他人事ではない判例です。</p>
+
+        <!-- Checklist -->
+        <h2 class="section-heading">あなたのジムは大丈夫？チェックリスト</h2>
+
+        <p>以下のうち一つでも当てはまれば、未払い残業代リスクがあります。</p>
+
+        <ul class="checklist">
+            <li>スタジオマネージャーや店長に残業代を支払っていない</li>
+            <li>役職手当だけで「管理職扱い」にしている</li>
+            <li>マネージャーもタイムカード・勤怠システムで管理している</li>
+            <li>プログラム内容・料金・営業時間は本部が決定している</li>
+            <li>マネージャーのアルバイト採用に本部承認が必要</li>
+        </ul>
+
+        <!-- Warning -->
+        <div class="warning-box">
+            <p><strong>リスクを放置すると——</strong></p>
+            <p>未払い残業代は、過去2〜3年分（場合によっては5年分）さかのぼって請求されます。月30時間の残業が未払いの社員が3人いた場合、3年間で数百万円規模の請求になることも珍しくありません。さらに付加金が加わると、実質2倍の支払いが生じる可能性があります。</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary-section">
+            <h2 class="section-heading">まとめ</h2>
+            <ol class="numbered-list">
+                <li>
+                    <strong>「肩書き」ではなく「実態」で判断される</strong>
+                    雇用契約書に「管理職」と書いてあっても、実態が伴わなければ管理監督者とは認められません。
+                </li>
+                <li>
+                    <strong>多店舗チェーンのマネージャーはハードルが特に高い</strong>
+                    本部が方針を決め、現場が実行するだけの体制では、管理監督者性が認められる余地は少ないとされています。
+                </li>
+                <li>
+                    <strong>早めの見直しがリスクを防ぐ</strong>
+                    問題が発覚してからでは過去数年分＋ペナルティで大きな金額になり得ます。今のうちに労務体制を点検しましょう。
+                </li>
+            </ol>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <h3>無料相談のご案内</h3>
+            <p>労務管理・就業規則の見直し、管理監督者の適正運用など、<br>フィットネス業界に詳しい弁護士がアドバイスします。</p>
+            <a href="https://kengoamericanfootball.github.io/benfit/#contact" class="cta-button">BenFitに相談する</a>
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="disclaimer">
+            ※ 本コラムは、裁判例の紹介を目的とした一般的な情報提供であり、法的助言を構成するものではありません。個別の事案では結論が異なる場合があります。具体的なご相談はBenFitまでお問い合わせください。
+        </p>
+
+    </article>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">BenFit</div>
+            <p class="footer-text">フィットネス業界専門の法律サービス｜弁護士・BBJ大阪大会優勝者が運営</p>
+            <p class="footer-text" style="margin-top: 0.5rem;">© 2026 BenFit All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
