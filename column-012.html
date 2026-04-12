@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>車椅子会員を除名したジム。障害者差別と「合理的配慮」の境界線｜BenFit コラム</title>
+    <meta name="description" content="電動車椅子利用の会員を除名した大手スポーツジム。障害者差別解消法の「合理的配慮」と除名の適法性が争われた東京地裁令和3年判決を解説。2024年4月改正で民間事業者にも合理的配慮の提供が義務化。">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNY9CC6DX9');</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root{--color-bg-primary:#0a0a0a;--color-bg-secondary:#111111;--color-bg-tertiary:#1a1a1a;--color-gold:#d4a853;--color-gold-light:#e8c878;--color-text-primary:#ffffff;--color-text-secondary:#a0a0a0;--color-text-muted:#666666;--color-border:#2a2a2a;--font-display:'Oswald',sans-serif;--font-body:'Noto Sans JP',sans-serif;--spacing-xs:0.5rem;--spacing-sm:1rem;--spacing-md:2rem;--spacing-lg:4rem;--transition-fast:0.2s ease}
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:var(--font-body);background-color:var(--color-bg-primary);color:var(--color-text-primary);line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased}
+        .site-header{background:var(--color-bg-secondary);border-bottom:1px solid var(--color-border);padding:1rem 0;position:sticky;top:0;z-index:100}
+        .header-inner{max-width:800px;margin:0 auto;padding:0 1.5rem;display:flex;justify-content:space-between;align-items:center}
+        .site-logo{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--color-gold);text-decoration:none;letter-spacing:.05em}
+        .back-link{color:var(--color-text-secondary);text-decoration:none;font-size:.85rem;transition:color var(--transition-fast)}.back-link:hover{color:var(--color-gold)}
+        .article-container{max-width:800px;margin:0 auto;padding:var(--spacing-lg) 1.5rem}
+        .article-meta{display:flex;align-items:center;gap:1rem;margin-bottom:var(--spacing-md);font-size:.85rem;color:var(--color-text-muted)}
+        .article-category{background:rgba(212,168,83,.15);color:var(--color-gold);padding:.25rem .75rem;border-radius:2px;font-size:.75rem;font-weight:500;letter-spacing:.05em}
+        .article-title{font-family:var(--font-body);font-size:1.75rem;font-weight:900;line-height:1.4;margin-bottom:var(--spacing-md);color:var(--color-text-primary)}.article-title .highlight{color:var(--color-gold)}
+        .article-lead{font-size:1.05rem;color:var(--color-text-secondary);margin-bottom:var(--spacing-lg);padding-bottom:var(--spacing-md);border-bottom:1px solid var(--color-border)}
+        .section-heading{font-family:var(--font-body);font-size:1.25rem;font-weight:700;color:var(--color-text-primary);margin-top:var(--spacing-lg);margin-bottom:var(--spacing-sm);padding-left:.75rem;border-left:3px solid var(--color-gold)}
+        .sub-heading{font-size:1.05rem;font-weight:700;color:var(--color-gold-light);margin-top:var(--spacing-md);margin-bottom:var(--spacing-xs)}
+        p{margin-bottom:1rem;color:var(--color-text-secondary)}
+        strong{color:var(--color-text-primary);font-weight:700}
+        .case-info{background:var(--color-bg-tertiary);border:1px solid var(--color-border);border-radius:4px;padding:1.5rem;margin:var(--spacing-md) 0}
+        .case-info-label{font-size:.75rem;color:var(--color-gold);font-weight:500;letter-spacing:.1em;margin-bottom:.5rem}
+        .case-info p{margin-bottom:.5rem;font-size:.9rem}
+        .result-box{background:rgba(212,168,83,.08);border:1px solid rgba(212,168,83,.3);border-radius:4px;padding:1.5rem;margin:var(--spacing-md) 0}
+        .result-box-label{font-family:var(--font-display);font-size:.85rem;color:var(--color-gold);font-weight:600;letter-spacing:.1em;margin-bottom:.75rem}
+        .result-box p{color:var(--color-text-primary);font-weight:500}
+        .numbered-list{list-style:none;counter-reset:item;margin:var(--spacing-sm) 0 var(--spacing-md);padding:0}
+        .numbered-list li{counter-increment:item;padding:.75rem 0 .75rem 2.5rem;position:relative;color:var(--color-text-secondary)}
+        .numbered-list li::before{content:counter(item);position:absolute;left:0;top:.75rem;width:1.5rem;height:1.5rem;background:rgba(212,168,83,.15);color:var(--color-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700}
+        .numbered-list li strong{display:block;color:var(--color-text-primary);margin-bottom:.25rem}
+        .key-point{background:var(--color-bg-tertiary);border-left:3px solid var(--color-gold);padding:1.25rem 1.5rem;margin:var(--spacing-md) 0}
+        .key-point p{color:var(--color-text-primary);font-size:.95rem;margin-bottom:0}
+        .info-table{width:100%;border-collapse:collapse;margin:var(--spacing-sm) 0 var(--spacing-md);font-size:.9rem}
+        .info-table th,.info-table td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid var(--color-border)}
+        .info-table th{color:var(--color-gold-light);font-weight:500;width:35%;background:var(--color-bg-tertiary)}
+        .info-table td{color:var(--color-text-secondary)}
+        .summary-section{background:var(--color-bg-secondary);border:1px solid var(--color-border);border-radius:4px;padding:2rem;margin:var(--spacing-lg) 0}
+        .summary-section .section-heading{margin-top:0}
+        .cta-section{background:linear-gradient(135deg,rgba(212,168,83,.1) 0%,rgba(212,168,83,.05) 100%);border:1px solid rgba(212,168,83,.2);border-radius:4px;padding:2rem;margin:var(--spacing-lg) 0;text-align:center}
+        .cta-section h3{font-family:var(--font-body);font-size:1.1rem;font-weight:700;color:var(--color-gold);margin-bottom:.75rem}
+        .cta-section p{color:var(--color-text-secondary);font-size:.9rem;margin-bottom:1rem}
+        .cta-button{display:inline-block;background:var(--color-gold);color:var(--color-bg-primary);padding:.75rem 2rem;text-decoration:none;font-weight:700;font-size:.9rem;border-radius:2px;transition:all var(--transition-fast)}.cta-button:hover{background:var(--color-gold-light);transform:translateY(-1px)}
+        .disclaimer{font-size:.8rem;color:var(--color-text-muted);margin-top:var(--spacing-lg);padding-top:var(--spacing-md);border-top:1px solid var(--color-border)}
+        .site-footer{background:var(--color-bg-secondary);border-top:1px solid var(--color-border);padding:2rem 0;margin-top:var(--spacing-lg);text-align:center}
+        .footer-inner{max-width:800px;margin:0 auto;padding:0 1.5rem}
+        .footer-brand{font-family:var(--font-display);font-size:1.2rem;color:var(--color-gold);font-weight:600;margin-bottom:.5rem}
+        .footer-text{font-size:.8rem;color:var(--color-text-muted)}
+        @media(max-width:600px){.article-title{font-size:1.35rem}.section-heading{font-size:1.1rem}.info-table th,.info-table td{padding:.5rem;font-size:.85rem}.info-table th{width:30%}}
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="https://kengoamericanfootball.github.io/benfit/" class="site-logo">BenFit</a>
+            <a href="https://kengoamericanfootball.github.io/benfit/#column" class="back-link">← コラム一覧に戻る</a>
+        </div>
+    </header>
+
+    <article class="article-container">
+
+        <div class="article-meta">
+            <span class="article-category">判例解説</span>
+            <span>2026.04.11</span>
+            <span>COLUMN #012</span>
+        </div>
+
+        <h1 class="article-title">
+            車椅子会員を除名したジム。<br>
+            障害者差別と<span class="highlight">「合理的配慮」</span>の境界線
+        </h1>
+
+        <p class="article-lead">
+            脳出血で電動車椅子ユーザーとなった会員が、長年通っていたジムから突然除名された——。障害者差別解消法が定める「合理的配慮」とは何か。2024年4月の法改正で民間事業者にも義務化された今、すべてのジム経営者が知っておくべき判例を解説します。
+        </p>
+
+        <div class="case-info">
+            <div class="case-info-label">参考判例</div>
+            <p><strong>東京地裁 令和3年10月28日判決</strong></p>
+            <p>令和2年（ワ）第2630号 地位確認等請求事件</p>
+            <p>裁判官：植田類</p>
+            <p>フィットネスクラブの電動車椅子利用会員に対する除名処分の有効性と不法行為の成否が争われた事案</p>
+        </div>
+
+        <h2 class="section-heading">事案の概要</h2>
+
+        <p>原告の男性は、新宿区内のフィットネスクラブがオープンした2012年8月頃から会員として利用していました。ところが2013年3月、<strong>レッスン中に右被殻出血を発症</strong>。後遺症として左片麻痺が残り、以後は電動車椅子での生活を余儀なくされました。一旦退会した後、2016年4月に再入会し、受付付近に車椅子を置いて徒歩でトレーニングルームに移動するスタイルで利用を継続していました。</p>
+
+        <p>2018年7月頃に支配人が交代。2019年夏の催事を契機に、新支配人は車椅子を風除室（入口の外側スペース）に停めて徒歩で入館するよう依頼しました。原告は館内移動については徒歩に切り替えたものの、<strong>電動車椅子に乗ったまま入館して受付手続を行う</strong>ことは続けていました。支配人はこの点についても繰り返し注意を行いました。</p>
+
+        <p>2019年10月22日、原告が電動車椅子のまま受付手続をしたことを従業員が注意したところ口論に発展。支配人は原告に対し、今後の行為を行わないことを誓約する確認書への署名を求めましたが、原告はこれを拒否。翌日、被告は会則に基づき<strong>会員からの除名処分</strong>を決定しました。</p>
+
+        <p>原告は、除名処分が身体障害を理由とする不当な差別的取扱いであるとして、<strong>会員の地位確認</strong>と<strong>慰謝料等330万円</strong>の支払いを求めて提訴しました。</p>
+
+        <table class="info-table">
+            <tr><th>原告</th><td>電動車椅子利用の男性会員（2012年入会→退会→2016年再入会。2013年にレッスン中の右被殻出血で左片麻痺）</td></tr>
+            <tr><th>被告</th><td>フィットネスクラブ運営会社</td></tr>
+            <tr><th>除名理由</th><td>①危険な電動車椅子による館内移動の繰返し・従業員の注意不服従、②暴言等の威嚇行為</td></tr>
+            <tr><th>請求内容</th><td>会員の地位確認＋慰謝料等330万円</td></tr>
+            <tr><th>事件番号</th><td>令和2年（ワ）第2630号</td></tr>
+        </table>
+
+        <h2 class="section-heading">争点</h2>
+
+        <h3 class="sub-heading">争点1：車椅子の設置場所変更指示は「不当な差別的取扱い」に当たるか</h3>
+        <p>障害者差別解消法8条1項は、事業者が障害を理由として不当な差別的取扱いをすることを禁止しています。長年認めてきた受付付近への車椅子設置を、支配人交代後に突然拒否したことがこれに該当するかが問われました。</p>
+
+        <h3 class="sub-heading">争点2：ジム側は「合理的配慮」を欠いていたか</h3>
+        <p>同条2項は、事業者に対し、障害者から社会的障壁の除去を必要としている旨の意思表明があった場合に、合理的な配慮を行うことを求めています。車椅子利用者が受付付近まで車椅子で移動し、そこに車椅子を置いてトレーニングするという配慮が、事業者に過重な負担なく実施可能であったかが争点となりました。</p>
+
+        <h3 class="sub-heading">争点3：除名処分は不当・違法か</h3>
+        <p>ジム側は「危険な車椅子操作と従業員への威嚇行為」を除名理由としていますが、原告側はこれが障害を理由とした実質的な排除であると主張しました。</p>
+
+        <h2 class="section-heading">裁判所の判断</h2>
+
+        <div class="result-box">
+            <div class="result-box-label">RESULT</div>
+            <p><strong>一部認容。除名処分は「根拠を欠くもので無効」と判断し、会員の地位確認を認容。</strong></p>
+            <p>慰謝料30万円＋弁護士費用3万円＝合計33万円の支払いを命令。ジム側は控訴せず、判決確定。</p>
+            <p>ただし、「不当な差別的取扱いを行うことまで意図してなされたものとは認められない」として、差別の意図自体は否定。対応の不十分さを問題とした。</p>
+        </div>
+
+        <h2 class="section-heading">裁判所が認定した理由</h2>
+
+        <ol class="numbered-list">
+            <li>
+                <strong>「危険な電動車椅子での館内移動の繰返し」は認定されなかった</strong>
+                裁判所は、被告が電動車椅子による破損として提出した写真等について、原告の電動車椅子によるものとまでは直ちに認められないとし、館内移動時の具体的な使用状況や他の会員からの苦情の頻度・内容を認めるに足りる的確な証拠はないとして、この除名理由を否定しました。
+            </li>
+            <li>
+                <strong>受付部分での電動車椅子使用を全面制限する必要性は認められなかった</strong>
+                裁判所は、通路等のスペースが狭い部分での電動車椅子使用の制限は認めつつも、一定のスペースがある受付部分については、電動車椅子のまま入館して受付手続を行うことを全面的に制限する必要性までは直ちには認められないと判断しました。また、仮に制限の必要性があったとしても、その理由を具体的に説明し、合理的な範囲内での代替的な利用方法を提案するなどの対応が必要であったとされました。
+            </li>
+            <li>
+                <strong>「暴言等の威嚇行為」も除名理由としては認められなかった</strong>
+                被告が提出した対応記録は被告内部で作成されたものにすぎず、支配人も原告の言動について具体的な内容を証言していないとして、記載を直ちに信用することはできないと判断。また、電動車椅子の使用制限に対する被告の対応が十分でなかった以上、原告がクレームを述べたことも直ちに不相当とはいえないとされました。
+            </li>
+            <li>
+                <strong>不法行為は認めたが、差別の「意図」までは否定した</strong>
+                裁判所は、被告が電動車椅子の使用に関して十分な対応を行わないまま除名処分を行ったことは不法行為に該当するとしつつも、「不当な差別的取扱いを行うことまで意図してなされたものと認めるに足りる証拠はない」として、差別の意図自体は否定。これらの事情を考慮し、慰謝料を30万円と算定しました。
+            </li>
+        </ol>
+
+        <div class="key-point">
+            <p>【注目ポイント】本判決は障害者差別解消法の「合理的配慮」義務違反を正面から認定したものではなく、除名処分の根拠事実の不存在と、対応の不十分さを理由とする不法行為を認定したものです。しかし、2024年4月の法改正により合理的配慮の提供が民間事業者にも「義務」化された現在、同種の事案では合理的配慮義務違反がより直接的に問われる可能性があります。</p>
+        </div>
+
+        <h2 class="section-heading">注意点：ジム経営者・トレーナーが学ぶべきこと</h2>
+
+        <ol class="numbered-list">
+            <li>
+                <strong>入会規約に「障害を理由とした除名」と読める条項がないか点検する</strong>
+                「他の会員に迷惑をかける行為」を除名事由とする規約は一般的ですが、障害に起因する行動（車椅子の移動、介助犬の同伴等）がこれに該当するかは慎重な判断が必要です。規約の文言と運用の両方を点検しましょう。
+            </li>
+            <li>
+                <strong>「合理的配慮」の具体例を事前に整理しておく</strong>
+                車椅子の設置スペースの確保、バリアフリー動線の確認、スタッフによる移動補助、トレーニングメニューの調整など、自施設で実施可能な配慮を事前にリストアップしておくことが重要です。「過重な負担」に当たるかどうかは、施設の規模・人員・費用等を踏まえて個別に判断されます。
+            </li>
+            <li>
+                <strong>対応変更時は記録と協議のプロセスを残す</strong>
+                やむを得ず対応を変更する場合も、利用者との協議プロセスと変更理由を記録に残しておくことが、万一の紛争時の最大の防御策になります。一方的な通告は避け、代替手段の提案を含めた協議を行うべきです。
+            </li>
+        </ol>
+
+        <div class="summary-section">
+            <h2 class="section-heading">まとめ</h2>
+            <ol class="numbered-list">
+                <li>
+                    <strong>2024年4月から合理的配慮の提供は民間事業者の「義務」</strong>
+                    ジムやスタジオも例外ではありません。合理的配慮の不提供は、それ自体が違法となり得ます。
+                </li>
+                <li>
+                    <strong>「安全確保」を理由とした安易な拒否・排除は危険</strong>
+                    具体的な危険の有無を慎重に検討し、代替手段を講じた上でなお困難な場合にのみ制限が正当化されます。
+                </li>
+                <li>
+                    <strong>入会規約・除名基準を障害者差別解消法の観点から見直す</strong>
+                    障害に起因する行動と迷惑行為の区別を意識した規約設計と運用が求められます。
+                </li>
+            </ol>
+        </div>
+
+        <div class="cta-section">
+            <h3>無料相談のご案内</h3>
+            <p>入会規約の見直し、合理的配慮の体制整備、障害者対応マニュアルの作成など、<br>フィットネス業界に詳しい弁護士がアドバイスします。</p>
+            <a href="https://kengoamericanfootball.github.io/benfit/#contact" class="cta-button">BenFitに相談する</a>
+        </div>
+
+        <p class="disclaimer">
+            ※ 本コラムは、裁判例の紹介を目的とした一般的な情報提供であり、法的助言を構成するものではありません。個別の事案では結論が異なる場合があります。具体的なご相談はBenFitまでお問い合わせください。
+        </p>
+
+    </article>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">BenFit</div>
+            <p class="footer-text">フィットネス業界専門の法律サービス｜弁護士・BBJ大阪大会優勝者が運営</p>
+            <p class="footer-text" style="margin-top: 0.5rem;">© 2026 BenFit All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
