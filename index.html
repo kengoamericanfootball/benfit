@@ -1733,6 +1733,20 @@
         .column-back { margin-bottom: var(--spacing-md); }
         .column-back a { color: var(--color-gold); text-decoration: none; font-size: 0.9rem; }
         .column-back a:hover { text-decoration: underline; }
+        /* --- よくあるご相談 --- */
+        .consult-note { text-align: center; color: var(--color-text-muted); font-size: 0.85rem; margin-top: calc(-1 * var(--spacing-sm)); margin-bottom: var(--spacing-lg); }
+        .consult-phase { margin-bottom: var(--spacing-lg); }
+        .consult-phase-title { font-family: var(--font-display); font-size: 1.05rem; letter-spacing: 0.08em; color: var(--color-gold); margin-bottom: var(--spacing-sm); padding-left: 0.75rem; border-left: 3px solid var(--color-gold); }
+        .consult-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md); }
+        .consult-card { display: flex; flex-direction: column; gap: 0.5rem; background: var(--color-bg-tertiary); border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; text-decoration: none; transition: all var(--transition-fast); }
+        .consult-card:hover { border-color: var(--color-gold); transform: translateY(-4px); }
+        .consult-q { font-size: 1.05rem; font-weight: 700; color: var(--color-text-primary); }
+        .consult-q::before { content: "「"; color: var(--color-gold); }
+        .consult-q::after { content: "」"; color: var(--color-gold); }
+        .consult-a { font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.7; flex-grow: 1; }
+        .consult-link { font-size: 0.85rem; font-weight: 700; color: var(--color-gold); margin-top: 0.5rem; }
+        .consult-cta { text-align: center; margin-top: var(--spacing-lg); }
+        @media (max-width: 640px) { .consult-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -1743,7 +1757,7 @@
                 <a href="#" class="logo">BEN<span>FIT</span></a>
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="#problems">よくある悩み</a></li>
+                        <li><a href="#consult">よくあるご相談</a></li>
                         <li><a href="#services">サービス</a></li>
                         <li><a href="#pricing">料金</a></li>
                         <li><a href="#why">選ばれる理由</a></li>
@@ -1781,70 +1795,113 @@
         </div>
     </section>
 
-    <!-- Problems Section -->
-    <section class="problems section" id="problems">
+    <!-- よくあるご相談 Section -->
+    <section class="consult section" id="consult">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">こんなお悩み、<br>ありませんか？</h2>
-            
-            <div class="problems-grid">
-                <div class="problem-card animate-on-scroll">
-                    <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="12" y1="18" x2="12" y2="12"></line>
-                        <line x1="9" y1="15" x2="15" y2="15"></line>
-                    </svg>
-                    <h3>会員規約が不安</h3>
-                    <p>ネットのテンプレートをそのまま使っているけど、本当に大丈夫？</p>
-                </div>
+            <h2 class="section-title animate-on-scroll">よくあるご相談</h2>
+            <p class="consult-note animate-on-scroll">※一般的なご相談例です。実際のご相談内容に応じて対応します。</p>
 
-                <div class="problem-card animate-on-scroll">
-                    <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                    </svg>
-                    <h3>事故・怪我の責任</h3>
-                    <p>会員がトレーニング中に怪我をした場合、どこまで責任を負う？</p>
-                </div>
-
-                <div class="problem-card animate-on-scroll">
-                    <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                    <h3>退会・クレームトラブル</h3>
-                    <p>退会時のトラブルやクレーマー対応に疲弊している。</p>
-                </div>
-
-                <div class="problem-card animate-on-scroll">
-                    <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                    </svg>
-                    <h3>雇用 or 業務委託？</h3>
-                    <p>トレーナーとの契約形態が曖昧で、労務リスクが心配。</p>
-                </div>
-
-                <div class="problem-card animate-on-scroll">
-                    <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                    </svg>
-                    <h3>相談相手がいない</h3>
-                    <p>法律のことを気軽に相談できる専門家が周りにいない。</p>
+            <div class="consult-phase animate-on-scroll">
+                <h3 class="consult-phase-title">開業・準備</h3>
+                <div class="consult-grid">
+                    <a href="#contact" class="consult-card">
+                        <span class="consult-q">ジムを開業したい</span>
+                        <span class="consult-a">開業時に必要な契約書や会員規約の整備、事業形態の検討などをご相談いただけます。</span>
+                        <span class="consult-link">相談する →</span>
+                    </a>
+                    <a href="column-027.html" class="consult-card">
+                        <span class="consult-q">会員規約を整備したい</span>
+                        <span class="consult-a">「一切責任を負いません」等の免責条項や退会・返金条項を、消費者契約法に沿って見直します。</span>
+                        <span class="consult-link">関連コラムを読む →</span>
+                    </a>
                 </div>
             </div>
 
-            <div class="problems-conclusion animate-on-scroll">
-                <p>
-                    フィットネス業界には、<span class="highlight">業界特有の法的リスク</span>があります。<br>
-                    それは、あなたの意識が低いからではありません。<br>
-                    <span class="highlight">「業界を知る専門家」に出会えていない</span>だけです。
-                </p>
+            <div class="consult-phase animate-on-scroll">
+                <h3 class="consult-phase-title">運営中</h3>
+                <div class="consult-grid">
+                    <a href="column-026.html" class="consult-card">
+                        <span class="consult-q">スタッフとの契約を整備したい</span>
+                        <span class="consult-a">業務委託・雇用契約、競業避止や引き抜き対策など、トレーナーとの契約整備をご相談いただけます。</span>
+                        <span class="consult-link">関連コラムを読む →</span>
+                    </a>
+                    <a href="column-027.html" class="consult-card">
+                        <span class="consult-q">会員から返金を求められた</span>
+                        <span class="consult-a">中途解約・返金や会費不返還をめぐるトラブルへの対応と、規約の見直しをサポートします。</span>
+                        <span class="consult-link">関連コラムを読む →</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="consult-phase animate-on-scroll">
+                <h3 class="consult-phase-title">トラブル対応</h3>
+                <div class="consult-grid">
+                    <a href="#contact" class="consult-card">
+                        <span class="consult-q">Google口コミ・SNSで誹謗中傷を受けた</span>
+                        <span class="consult-a">悪質な口コミ・投稿の削除請求や発信者情報開示など、初動からご相談いただけます。</span>
+                        <span class="consult-link">相談する →</span>
+                    </a>
+                    <a href="column-001.html" class="consult-card">
+                        <span class="consult-q">会員が施設内でケガをしてしまった</span>
+                        <span class="consult-a">施設内の事故と安全配慮義務をめぐる責任、事故発生時の対応や予防策についてご相談いただけます。</span>
+                        <span class="consult-link">関連コラムを読む →</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="consult-cta animate-on-scroll">
+                <a href="#contact" class="btn btn-primary"><span>お問い合わせはこちら</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section (選ばれる理由) -->
+    <section class="why section" id="why">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">BenFitが<br>選ばれる理由</h2>
+
+            <div class="why-grid">
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg>
+                    </div>
+                    <h3>フィットネス業界に特化</h3>
+                    <p>ジム・パーソナルジム・ピラティス・整体院など、フィットネス事業者に特化した法律サービス。業界特有の課題を前提に、的確にご相談を承ります。</p>
+                </div>
+
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>競技経験を持つ弁護士が現場目線で対応</h3>
+                    <p>自らも大会に立つ競技者だからこそ、トレーニングや店舗運営の現場感覚を理解。実情に即したアドバイスを行います。</p>
+                </div>
+
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>予防法務を重視した継続的なサポート</h3>
+                    <p>トラブルが起きてからの対応だけでなく、契約書・会員規約の整備など「起きる前の対策」を重視し、継続的にサポートします。</p>
+                </div>
+
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20V10"></path>
+                            <path d="M18 20V4"></path>
+                            <path d="M6 20v-4"></path>
+                        </svg>
+                    </div>
+                    <h3>顧問契約からスポット相談まで柔軟に対応</h3>
+                    <p>継続的な顧問契約から、単発のスポット相談まで。事業規模やご状況に合わせて、柔軟に対応します。</p>
+                </div>
             </div>
         </div>
     </section>
@@ -2041,47 +2098,6 @@
         </div>
     </section>
 
-    <!-- Why Section -->
-    <section class="why section" id="why">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">BenFitが<br>選ばれる理由</h2>
-            
-            <div class="why-grid">
-                <div class="why-card animate-on-scroll">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-                        </svg>
-                    </div>
-                    <h3>業界特化だから話が早い</h3>
-                    <p>「フィットネス業界あるある」を説明する必要がありません。業界の常識・課題を理解した上で、的確なアドバイスを提供します。</p>
-                </div>
-
-                <div class="why-card animate-on-scroll">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="12 6 12 12 16 14"></polyline>
-                        </svg>
-                    </div>
-                    <h3>予防から解決までワンストップ</h3>
-                    <p>契約書整備による予防から、実際のトラブル対応まで一貫してサポート。問題が起きる前の対策を重視します。</p>
-                </div>
-
-                <div class="why-card animate-on-scroll">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 20V10"></path>
-                            <path d="M18 20V4"></path>
-                            <path d="M6 20v-4"></path>
-                        </svg>
-                    </div>
-                    <h3>経営者目線でアドバイス</h3>
-                    <p>法律論だけでなく、ビジネス上の判断も考慮。「法的に正しい」だけでなく「経営的に最適」な解決策を提案します。</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Profile Section -->
     <section class="profile section" id="profile">
@@ -2281,6 +2297,14 @@
             <p class="column-lead animate-on-scroll">フィットネス業界の法律問題を、実際の事例をもとに解説します。最新の記事を掲載しています。</p>
 
             <div class="column-grid">
+                <a href="column-026.html" class="column-card animate-on-scroll">
+                    <div class="column-card-category">判例解説</div>
+                    <div class="column-card-date">2026.07.18</div>
+                    <h3 class="column-card-title">競業避止条項は「書けば有効」ではない——独立・引き抜きトラブルの3つの落とし穴</h3>
+                    <p class="column-card-excerpt">「退店後1.5km以内は営業禁止」の条項の効力等が争われた裁判例。競業避止条項が無効になる場合、引き抜きの立証の難しさ、労働環境が経営側に不利に働く点を解説（名古屋地裁H29.12.1・請求棄却）。</p>
+                    <span class="column-card-link">続きを読む →</span>
+                </a>
+
                 <a href="column-025.html" class="column-card animate-on-scroll">
                     <div class="column-card-category">紛争事例解説</div>
                     <div class="column-card-date">2026.07.11</div>
@@ -2294,14 +2318,6 @@
                     <div class="column-card-date">2026.07.04</div>
                     <h3 class="column-card-title">首を「ボキッ」と鳴らすカイロ施術で後遺障害。無資格施術の危険と「消滅時効」の落とし穴</h3>
                     <p class="column-card-excerpt">厚生省通知が“危険”と名指しする頚椎スラスト。腱の部分断裂で後遺障害12級・1,330万円。不法行為は時効で棄却も、診療契約上の債務不履行で救済された東京地裁判決。</p>
-                    <span class="column-card-link">続きを読む →</span>
-                </a>
-
-                <a href="column-023.html" class="column-card animate-on-scroll">
-                    <div class="column-card-category">判例解説</div>
-                    <div class="column-card-date">2026.06.27</div>
-                    <h3 class="column-card-title">生後4か月児が施術中に死亡。「6,000回の実績」は安全の証明にならない</h3>
-                    <p class="column-card-excerpt">頸動脈洞への刺激は5秒でも迷走神経反射を起こす。「実績の多さは危険が現実化しなかっただけ」と断じ、ブログ広報を担った副理事長にも幇助責任（民法719条2項）を認めた神戸地裁判決。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
             </div>
