@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ビフォーアフター写真、その同意で足りていますか——会員の身体データとSNS発信｜BenFit コラム</title>
+    <meta name="description" content="ジム・パーソナルジムのビフォーアフター写真とSNS発信を法的に整理。個人情報保護法上の利用目的の通知・公表、体組成データの扱い、退会後の削除請求、肖像権、景品表示法（優良誤認・ステマ規制）まで、実務の同意書設計を解説。">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNY9CC6DX9');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{--color-bg-primary:#0a0a0a;--color-bg-secondary:#111111;--color-bg-tertiary:#1a1a1a;--color-gold:#d4a853;--color-gold-light:#e8c878;--color-text-primary:#ffffff;--color-text-secondary:#a0a0a0;--color-text-muted:#666666;--color-border:#2a2a2a;--font-display:'Oswald',sans-serif;--font-body:'Noto Sans JP',sans-serif;--spacing-xs:0.5rem;--spacing-sm:1rem;--spacing-md:2rem;--spacing-lg:4rem;--transition-fast:0.2s ease}
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:var(--font-body);background-color:var(--color-bg-primary);color:var(--color-text-primary);line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased}
+        .site-header{background:var(--color-bg-secondary);border-bottom:1px solid var(--color-border);padding:1rem 0;position:sticky;top:0;z-index:100}
+        .header-inner{max-width:800px;margin:0 auto;padding:0 1.5rem;display:flex;justify-content:space-between;align-items:center}
+        .site-logo{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--color-gold);text-decoration:none;letter-spacing:.05em}
+        .back-link{color:var(--color-text-secondary);text-decoration:none;font-size:.85rem;transition:color var(--transition-fast)}.back-link:hover{color:var(--color-gold)}
+        .article-container{max-width:800px;margin:0 auto;padding:var(--spacing-lg) 1.5rem}
+        .article-meta{display:flex;align-items:center;gap:1rem;margin-bottom:var(--spacing-md);font-size:.85rem;color:var(--color-text-muted)}
+        .article-category{background:rgba(212,168,83,.15);color:var(--color-gold);padding:.25rem .75rem;border-radius:2px;font-size:.75rem;font-weight:500;letter-spacing:.05em}
+        .article-title{font-family:var(--font-body);font-size:1.75rem;font-weight:900;line-height:1.4;margin-bottom:var(--spacing-md);color:var(--color-text-primary)}.article-title .highlight{color:var(--color-gold)}
+        .article-lead{font-size:1.05rem;color:var(--color-text-secondary);margin-bottom:var(--spacing-lg);padding-bottom:var(--spacing-md);border-bottom:1px solid var(--color-border)}
+        .section-heading{font-family:var(--font-body);font-size:1.25rem;font-weight:700;color:var(--color-text-primary);margin-top:var(--spacing-lg);margin-bottom:var(--spacing-sm);padding-left:.75rem;border-left:3px solid var(--color-gold)}
+        .sub-heading{font-size:1.05rem;font-weight:700;color:var(--color-gold-light);margin-top:var(--spacing-md);margin-bottom:var(--spacing-xs)}
+        p{margin-bottom:1rem;color:var(--color-text-secondary)}
+        strong{color:var(--color-text-primary);font-weight:700}
+        .case-info{background:var(--color-bg-tertiary);border:1px solid var(--color-border);border-radius:4px;padding:1.5rem;margin:var(--spacing-md) 0}
+        .case-info-label{font-size:.75rem;color:var(--color-gold);font-weight:500;letter-spacing:.1em;margin-bottom:.5rem}
+        .case-info p{margin-bottom:.5rem;font-size:.9rem}
+        .result-box{background:rgba(212,168,83,.08);border:1px solid rgba(212,168,83,.3);border-radius:4px;padding:1.5rem;margin:var(--spacing-md) 0}
+        .result-box-label{font-family:var(--font-display);font-size:.85rem;color:var(--color-gold);font-weight:600;letter-spacing:.1em;margin-bottom:.75rem}
+        .result-box p{color:var(--color-text-primary);font-weight:500}
+        .numbered-list{list-style:none;counter-reset:item;margin:var(--spacing-sm) 0 var(--spacing-md);padding:0}
+        .numbered-list li{counter-increment:item;padding:.75rem 0 .75rem 2.5rem;position:relative;color:var(--color-text-secondary)}
+        .numbered-list li::before{content:counter(item);position:absolute;left:0;top:.75rem;width:1.5rem;height:1.5rem;background:rgba(212,168,83,.15);color:var(--color-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700}
+        .numbered-list li strong{display:block;color:var(--color-text-primary);margin-bottom:.25rem}
+        .key-point{background:var(--color-bg-tertiary);border-left:3px solid var(--color-gold);padding:1.25rem 1.5rem;margin:var(--spacing-md) 0}
+        .key-point p{color:var(--color-text-primary);font-size:.95rem;margin-bottom:0}
+        .info-table{width:100%;border-collapse:collapse;margin:var(--spacing-sm) 0 var(--spacing-md);font-size:.9rem}
+        .info-table th,.info-table td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid var(--color-border)}
+        .info-table th{color:var(--color-gold-light);font-weight:500;width:35%;background:var(--color-bg-tertiary)}
+        .info-table td{color:var(--color-text-secondary)}
+        .warning-box{background:rgba(220,53,69,.08);border:1px solid rgba(220,53,69,.3);border-radius:4px;padding:1.5rem;margin:var(--spacing-md) 0}
+        .warning-box p{color:#e8a0a0}.warning-box strong{color:#f0c0c0}
+        .summary-section{background:var(--color-bg-secondary);border:1px solid var(--color-border);border-radius:4px;padding:2rem;margin:var(--spacing-lg) 0}
+        .summary-section .section-heading{margin-top:0}
+        .cta-section{background:linear-gradient(135deg,rgba(212,168,83,.1) 0%,rgba(212,168,83,.05) 100%);border:1px solid rgba(212,168,83,.2);border-radius:4px;padding:2rem;margin:var(--spacing-lg) 0;text-align:center}
+        .cta-section h3{font-family:var(--font-body);font-size:1.1rem;font-weight:700;color:var(--color-gold);margin-bottom:.75rem}
+        .cta-section p{color:var(--color-text-secondary);font-size:.9rem;margin-bottom:1rem}
+        .cta-button{display:inline-block;background:var(--color-gold);color:var(--color-bg-primary);padding:.75rem 2rem;text-decoration:none;font-weight:700;font-size:.9rem;border-radius:2px;transition:all var(--transition-fast)}.cta-button:hover{background:var(--color-gold-light);transform:translateY(-1px)}
+        .disclaimer{font-size:.8rem;color:var(--color-text-muted);margin-top:var(--spacing-lg);padding-top:var(--spacing-md);border-top:1px solid var(--color-border)}
+        .site-footer{background:var(--color-bg-secondary);border-top:1px solid var(--color-border);padding:2rem 0;margin-top:var(--spacing-lg);text-align:center}
+        .footer-inner{max-width:800px;margin:0 auto;padding:0 1.5rem}
+        .footer-brand{font-family:var(--font-display);font-size:1.2rem;color:var(--color-gold);font-weight:600;margin-bottom:.5rem}
+        .footer-text{font-size:.8rem;color:var(--color-text-muted)}
+        @media(max-width:600px){.article-title{font-size:1.35rem}.section-heading{font-size:1.1rem}.info-table th,.info-table td{padding:.5rem;font-size:.85rem}.info-table th{width:30%}}
+    </style>
+</head>
+<body>
+    <header class="site-header"><div class="header-inner">
+        <a href="https://kengoamericanfootball.github.io/benfit/" class="site-logo">BenFit</a>
+        <a href="https://kengoamericanfootball.github.io/benfit/columns.html" class="back-link">← コラム一覧に戻る</a>
+    </div></header>
+    <article class="article-container">
+        <div class="article-meta">
+            <span class="article-category">実務解説</span>
+            <span>2026.08.08</span>
+            <span>COLUMN #029</span>
+        </div>
+        <h1 class="article-title">ビフォーアフター写真、<span class="highlight">その同意で足りていますか。</span><br>会員の身体データとSNS発信</h1>
+        <p class="article-lead">「◯kg減、写真掲載OKいただきました！」——パーソナルジムのSNSでは定番の投稿です。集客効果が高い一方、扱っているのは会員の身体という極めてセンシティブな情報。「口頭でOKをもらった」「入会時の規約に書いてある」で本当に足りているでしょうか。退会後に「消してほしい」と言われたら。今回は判例ではなく、個人情報保護法・肖像権・景品表示法という3つの角度から、ビフォーアフター写真と会員データの扱いを実務目線で整理します。同意書の設計まで踏み込んで解説します。</p>
+        <div class="case-info">
+            <div class="case-info-label">参考資料・根拠</div>
+            <p><strong>個人情報保護法</strong>（利用目的の特定・通知公表、目的外利用、要配慮個人情報、開示・利用停止等）</p>
+            <p>個人情報保護委員会「個人情報の保護に関する法律についてのガイドライン（通則編）」</p>
+            <p>個人情報保護委員会「ガイドラインに関するQ&amp;A」</p>
+            <p><strong>景品表示法</strong>（優良誤認表示、いわゆるステマ規制）</p>
+            <p>肖像権・パブリシティ権（民法上の人格的利益）</p>
+        </div>
+
+        <h2 class="section-heading">問題の整理</h2>
+        <p>ジムやパーソナルジムが扱う会員情報は、氏名・連絡先だけではありません。体重・体脂肪率・体組成データ、既往症や服薬状況、そして上半身の写真——他業種より踏み込んだ情報を日常的に取得しています。これをSNSやウェブサイトに掲載する場面では、次の3つの規律が同時にかかってきます。</p>
+        <ol class="numbered-list">
+            <li><strong>個人情報保護法</strong>——取得・利用・公表・削除のルール</li>
+            <li><strong>肖像権</strong>——本人の容ぼうを勝手に公開されない人格的利益</li>
+            <li><strong>景品表示法</strong>——「効果」の見せ方（優良誤認）と、口コミ・PR表示（ステマ規制）</li>
+        </ol>
+
+        <table class="info-table">
+            <tr><th>写真の位置づけ</th><td>本人を判別できる写真の画像は個人情報に該当（ただし個人データではないと解される場合がある）</td></tr>
+            <tr><th>体組成データ等</th><td>会員名簿等で検索可能に管理していれば個人データ。利用目的の範囲内での利用が必要</td></tr>
+            <tr><th>要配慮個人情報</th><td>病歴等は要配慮個人情報。取得には原則あらかじめ本人の同意が必要</td></tr>
+            <tr><th>広告での効果表示</th><td>ジム・エステは景品表示法の対象（医療広告ガイドラインの直接の対象ではない）</td></tr>
+        </table>
+
+        <h2 class="section-heading">整理のポイント</h2>
+        <div class="result-box">
+            <div class="result-box-label">POINT</div>
+            <p>実務上の結論は次のとおりです。</p>
+            <p>① 写真掲載は、個人情報保護法上は<strong>利用目的の通知・公表が必須</strong>。加えて肖像権の観点から<strong>本人の明確な同意（書面）を取るのが安全</strong><br>
+            ② 病歴等の<strong>要配慮個人情報の取得には、あらかじめ本人の同意が必要</strong><br>
+            ③ 「入会時の規約に一行」では不十分。<strong>掲載媒体・範囲・期間・撤回方法</strong>を特定した同意を<br>
+            ④ 効果の見せ方は<strong>景品表示法</strong>（優良誤認・ステマ規制）の問題。写真だけでなく表示全体で判断される</p>
+        </div>
+
+        <h2 class="section-heading">ポイント①：写真は「個人情報」だが、必要な手続きは整理して考える</h2>
+        <p>個人情報保護委員会のQ&amp;Aは、社内行事の写真の展示について、一般に<strong>本人を判別可能な写真の画像は個人情報に該当するが、個人データ（個人情報データベース等を構成する個人情報）ではないと解される</strong>ため、あらかじめ本人の同意を得ずに展示等を行っても第三者提供制限（法27条1項）に違反するおそれはないとしつつ、<strong>利用目的の通知または公表は必要</strong>としています（法21条1項）。</p>
+        <p>つまり、写真の公開について個人情報保護法が要求する最低ラインは「利用目的をきちんと示すこと」です。ジムであれば、プライバシーポリシーや入会申込書に「広告・宣伝（ウェブサイト・SNSへの掲載を含む）」といった利用目的を明記しておく必要があります。</p>
+        <div class="key-point">
+            <p>もっとも、これで安心とはいきません。<strong>ビフォーアフター写真は、肖像権という別の権利の問題</strong>を伴います。個人情報保護法の手続きを踏んだからといって、本人の容ぼうを広告に使う正当化にはなりません。実務では、<strong>掲載についての明確な同意（書面）</strong>を取るのが基本です。</p>
+        </div>
+
+        <h2 class="section-heading">ポイント②：既往症・服薬情報は「要配慮個人情報」</h2>
+        <p>問診票で確認する既往症や治療歴などの病歴は、個人情報保護法上の<strong>要配慮個人情報</strong>に当たります。要配慮個人情報は、取得や第三者提供に原則として本人の同意が必要で、いわゆるオプトアウトによる第三者提供は認められていません。また、要配慮個人情報を含む個人データの漏えい等が発生し、または発生したおそれがある場合には、個人情報保護委員会への報告が必要とされています。</p>
+        <p>安全な指導のために既往症を聞くのは適切な実務ですが、<strong>取得の同意と、厳格な管理</strong>がセットで求められます。「問診票を受付の棚に平置き」「トレーナーの個人スマホで撮影して共有」といった運用は見直すべきです（情報漏洩の責任については第19回コラムも参照）。</p>
+
+        <h2 class="section-heading">ポイント③：「規約に一行」では足りない——同意書に入れるべき項目</h2>
+        <p>トラブルの多くは、同意の範囲が曖昧なことから生じます。「SNSに載せていい」と言われたつもりが、本人は「店内の掲示だけだと思っていた」というすれ違いです。同意を取るなら、少なくとも次の項目を特定しておくべきです。</p>
+        <ol class="numbered-list">
+            <li>
+                <strong>掲載する媒体</strong>
+                自社ウェブサイト、Instagram、X、YouTube、紙のチラシ、店内掲示など。「当社が運営する媒体その他広告媒体」と包括的に書くだけでなく、主要な媒体を例示する。
+            </li>
+            <li>
+                <strong>掲載する内容の範囲</strong>
+                写真（顔を含むか／首から下のみか）、体重・体脂肪率などの数値、年齢・性別、コメント、氏名の表記方法（実名・イニシャル・匿名）。
+            </li>
+            <li>
+                <strong>掲載期間と撤回の方法</strong>
+                期間の定め、撤回の申出先と方法、撤回後の対応（新規掲載は停止し、既存の投稿も可能な範囲で削除する等）。
+            </li>
+            <li>
+                <strong>第三者への提供・二次利用の有無</strong>
+                フランチャイズ本部・提携先・広告代理店への提供、他店舗での利用、加工（トリミング・文字入れ）の可否。
+            </li>
+            <li>
+                <strong>対価の有無</strong>
+                無償か、割引・特典などの見返りがあるか。見返りがある場合は後述のステマ規制に直結します。
+            </li>
+        </ol>
+
+        <div class="warning-box">
+            <p><strong>【退会後に「削除してほしい」と言われたら】</strong></p>
+            <p>個人情報保護法には、本人からの開示、訂正、利用停止・消去の請求に関する規定があります。加えて、肖像権の観点からは、本人が掲載を望まなくなった以上、<strong>同意の撤回として尊重する</strong>のが実務的にも穏当です。「同意書に永久使用と書いてあるから消さない」という対応は、法的にも評判の面でも大きなリスクを招きます。撤回時の運用（誰が・いつまでに・どこまで削除するか）を、あらかじめ決めておきましょう。</p>
+        </div>
+
+        <h2 class="section-heading">ポイント④：効果の見せ方は「景品表示法」の問題</h2>
+        <p>ビフォーアフター写真は、実質的に「効果の広告」です。ここで押さえるべきは、<strong>ジムやエステは医療機関ではないため、医療広告ガイドラインの直接の対象ではなく、景品表示法が適用される</strong>という点です（美容医療クリニックでは、医療法の改正により、誤認させるおそれのあるビフォーアフター写真等が医療広告として認められないものとして明確化されています。ジムはこの規制の直接の対象ではありませんが、考え方は参考になります）。</p>
+        <p>景品表示法の観点では、次の2点が要注意です。</p>
+        <ol class="numbered-list">
+            <li>
+                <strong>優良誤認表示</strong>
+                実際よりも著しく優良と誤認させる表示は禁止されます。極端な成功例だけを並べる、撮影条件（照明・ポーズ・時間帯）を変えて差を強調する、食事制限や併用サービスなど前提条件を書かない——こうした見せ方は、一般の会員が同じ結果を得られると誤認させるおそれがあります。「個人差があります」の一言で免責されるわけではなく、<strong>表示全体から受ける印象</strong>で判断されます（痩身サプリの課徴金事例＝第21回コラムも参照）。
+            </li>
+            <li>
+                <strong>ステルスマーケティング規制</strong>
+                事業者が広告であることを隠して表示することは規制されています。会員に割引や特典を渡して投稿してもらう、スタッフが客のふりをして体験談を書く、口コミ風に自社で編集する——こうした運用は、広告であることの明示が必要になります（大手ジムの措置命令＝第17回コラムも参照）。
+            </li>
+        </ol>
+
+        <h2 class="section-heading">注意点：ジム・パーソナルジムが今すぐできること</h2>
+        <ol class="numbered-list">
+            <li>
+                <strong>プライバシーポリシーに「広告・宣伝への利用」を明記する</strong>
+                利用目的の通知・公表は法律上の要請です。ウェブサイトに掲載し、入会申込書からも参照できるようにしておきましょう。
+            </li>
+            <li>
+                <strong>写真掲載は「専用の同意書」で取る</strong>
+                入会規約への一行ではなく、媒体・範囲・期間・撤回方法・対価の有無を特定した書面（電子でも可）で取得し、保管する。口頭やLINEの「OKです」だけに頼らない。
+            </li>
+            <li>
+                <strong>撤回・削除のフローを決めておく</strong>
+                申出窓口、対応期限、削除の範囲（新規掲載の停止、既存投稿の削除、印刷物の扱い）を社内ルール化する。退会手続きの案内にも記載しておくと親切です。
+            </li>
+            <li>
+                <strong>問診票・体組成データの管理を見直す</strong>
+                既往症は要配慮個人情報です。アクセス権限の設定、施錠保管、個人スマホでの撮影・保存の禁止、退職時の返却・削除まで含めてルール化する。
+            </li>
+            <li>
+                <strong>広告表現をチェックする</strong>
+                前提条件（期間・食事管理・併用メニュー）の明示、極端な事例に偏らない選定、撮影条件の統一。会員やインフルエンサーに投稿を依頼する場合は、広告であることを明示する運用にする。
+            </li>
+        </ol>
+
+        <div class="summary-section">
+            <h2 class="section-heading">まとめ</h2>
+            <ol class="numbered-list">
+                <li>
+                    <strong>写真掲載は「利用目的の公表」＋「明確な同意」の二段構え</strong>
+                    個人情報保護法の手続きだけでは、肖像権の問題は解決しません。
+                </li>
+                <li>
+                    <strong>同意は範囲を特定して書面で</strong>
+                    媒体・内容・期間・撤回方法・対価の有無を明示し、撤回時の運用まで決めておく。
+                </li>
+                <li>
+                    <strong>効果の見せ方は景品表示法の問題</strong>
+                    優良誤認とステマ規制に注意。「個人差があります」だけでは足りません。
+                </li>
+            </ol>
+        </div>
+
+        <div class="cta-section">
+            <h3>無料相談のご案内</h3>
+            <p>写真・体験談の掲載同意書やプライバシーポリシーの整備、問診票・体組成データの管理体制、<br>SNS広告表現のチェックなど、フィットネス業界に詳しい弁護士がアドバイスします。</p>
+            <a href="https://kengoamericanfootball.github.io/benfit/#contact" class="cta-button">BenFitに相談する</a>
+        </div>
+        <p class="disclaimer">※ 本コラムは、一般的な情報提供を目的とするものであり、法的助言を構成するものではありません。個別の事案では結論が異なる場合があり、法令・ガイドラインは改正される場合がありますので、最新の情報をご確認ください。具体的なご相談はBenFitまでお問い合わせください。</p>
+    </article>
+    <footer class="site-footer"><div class="footer-inner">
+        <div class="footer-brand">BenFit</div>
+        <p class="footer-text">フィットネス業界専門の法律サービス｜弁護士・現役のフィジーク競技者が運営</p>
+        <p class="footer-text" style="margin-top: 0.5rem;">© 2026 BenFit All rights reserved.</p>
+    </div></footer>
+</body>
+</html>
