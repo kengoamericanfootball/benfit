@@ -4,2176 +4,602 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コラム一覧｜BenFit フィットネス業界専門の法律コラム</title>
-    <meta name="description" content="フィットネス業界（ジム・パーソナルジム・整体等）の法律問題を、実際の裁判例・紛争事例をもとに解説するBenFitのコラム一覧。カテゴリ・キーワードで絞り込めます。">
-    
-    <!-- Google Analytics -->
+    <meta name="description" content="フィットネス業界（ジム・パーソナルジム・整体等）の法律問題を、実際の裁判例・紛争事例・行政資料をもとに解説するBenFitのコラム一覧。カテゴリ・キーワードで絞り込めます。">
+    <meta property="og:site_name" content="BenFit">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="コラム一覧｜BenFit フィットネス業界専門の法律コラム">
+    <meta property="og:description" content="フィットネス業界（ジム・パーソナルジム・整体等）の法律問題を、実際の裁判例・紛争事例・行政資料をもとに解説するBenFitのコラム一覧。カテゴリ・キーワードで絞り込めます。">
+    <meta property="og:url" content="https://kengoamericanfootball.github.io/benfit/columns.html">
+    <meta property="og:image" content="https://kengoamericanfootball.github.io/benfit/ogp.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://kengoamericanfootball.github.io/benfit/columns.html">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kengoamericanfootball.github.io/benfit/"}, {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://kengoamericanfootball.github.io/benfit/columns.html"}]}</script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-KNY9CC6DX9');
-    </script>
-    
-    <!-- Google Fonts -->
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNY9CC6DX9');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
     <style>
-        /* ========================================
-           CSS Variables
-        ======================================== */
-        :root {
-            --color-bg-primary: #0a0a0a;
-            --color-bg-secondary: #111111;
-            --color-bg-tertiary: #1a1a1a;
-            --color-gold: #d4a853;
-            --color-gold-light: #e8c878;
-            --color-gold-dark: #b8923f;
-            --color-text-primary: #ffffff;
-            --color-text-secondary: #a0a0a0;
-            --color-text-muted: #666666;
-            --color-border: #2a2a2a;
-            
-            --font-display: 'Oswald', sans-serif;
-            --font-body: 'Noto Sans JP', sans-serif;
-            
-            --spacing-xs: 0.5rem;
-            --spacing-sm: 1rem;
-            --spacing-md: 2rem;
-            --spacing-lg: 4rem;
-            --spacing-xl: 6rem;
-            --spacing-xxl: 8rem;
-            
-            --transition-fast: 0.2s ease;
-            --transition-normal: 0.3s ease;
-            --transition-slow: 0.5s ease;
-        }
-
-        /* ========================================
-           Reset & Base
-        ======================================== */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-body);
-            background-color: var(--color-bg-primary);
-            color: var(--color-text-primary);
-            line-height: 1.8;
-            font-size: 16px;
-            overflow-x: hidden;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        /* ========================================
-           Utility Classes
-        ======================================== */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--spacing-md);
-        }
-
-        .section {
-            padding: var(--spacing-xxl) 0;
-        }
-
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: var(--spacing-lg);
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
-        }
-
-        .gold-text {
-            color: var(--color-gold);
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        /* ========================================
-           Animations
-        ======================================== */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes shimmer {
-            0% { background-position: -200% center; }
-            100% { background-position: 200% center; }
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ========================================
-           Header / Navigation
-        ======================================== */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: var(--spacing-sm) 0;
-            background: rgba(10, 10, 10, 0.9);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid transparent;
-            transition: var(--transition-normal);
-        }
-
-        .header.scrolled {
-            border-bottom-color: var(--color-border);
-        }
-
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: var(--font-display);
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            color: var(--color-text-primary);
-        }
-
-        .logo span {
-            color: var(--color-gold);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: var(--spacing-md);
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            transition: color var(--transition-fast);
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--color-gold);
-            transition: width var(--transition-normal);
-        }
-
-        .nav-links a:hover {
-            color: var(--color-gold);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 5px;
-        }
-
-        .mobile-menu-btn span {
-            display: block;
-            width: 25px;
-            height: 2px;
-            background: var(--color-text-primary);
-            transition: var(--transition-fast);
-        }
-
-        /* ========================================
-           Hero Section
-        ======================================== */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            padding-top: 80px;
-        }
-
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            background: 
-                radial-gradient(ellipse at 20% 50%, rgba(212, 168, 83, 0.1) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 80%, rgba(212, 168, 83, 0.05) 0%, transparent 40%),
-                linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
-        }
-
-        .hero-pattern {
-            position: absolute;
-            inset: 0;
-            background-image: 
-                linear-gradient(rgba(212, 168, 83, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(212, 168, 83, 0.03) 1px, transparent 1px);
-            background-size: 50px 50px;
-            opacity: 0.5;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            max-width: 900px;
-            padding: var(--spacing-md);
-        }
-
-        .hero-label {
-            display: inline-block;
-            font-family: var(--font-display);
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--color-gold);
-            margin-bottom: var(--spacing-md);
-            padding: var(--spacing-xs) var(--spacing-sm);
-            border: 1px solid var(--color-gold);
-            animation: fadeIn 0.8s ease forwards;
-        }
-
-        .hero-title {
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: 0.02em;
-            margin-bottom: var(--spacing-md);
-            animation: fadeInUp 0.8s ease 0.2s forwards;
-            opacity: 0;
-        }
-
-        .hero-title .highlight {
-            display: block;
-            color: var(--color-gold);
-            font-size: 1.1em;
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1rem, 2.5vw, 1.25rem);
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-lg);
-            line-height: 1.8;
-            animation: fadeInUp 0.8s ease 0.4s forwards;
-            opacity: 0;
-        }
-
-        .hero-cta {
-            animation: fadeInUp 0.8s ease 0.6s forwards;
-            opacity: 0;
-        }
-
-        /* ========================================
-           Buttons
-        ======================================== */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--spacing-xs);
-            padding: 1rem 2.5rem;
-            font-family: var(--font-body);
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            border: none;
-            cursor: pointer;
-            transition: all var(--transition-normal);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
-            color: var(--color-bg-primary);
-        }
-
-        .btn-primary::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 100%);
-            opacity: 0;
-            transition: opacity var(--transition-normal);
-        }
-
-        .btn-primary:hover::before {
-            opacity: 1;
-        }
-
-        .btn-primary span {
-            position: relative;
-            z-index: 1;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(212, 168, 83, 0.3);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--color-gold);
-            border: 2px solid var(--color-gold);
-        }
-
-        .btn-outline:hover {
-            background: var(--color-gold);
-            color: var(--color-bg-primary);
-        }
-
-        /* ========================================
-           Problems Section
-        ======================================== */
-        .problems {
-            background: var(--color-bg-secondary);
-            position: relative;
-        }
-
-        .problems::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
-        }
-
-        .problems-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--spacing-md);
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .problem-card {
-            background: var(--color-bg-tertiary);
-            border: 1px solid var(--color-border);
-            padding: var(--spacing-md);
-            position: relative;
-            transition: all var(--transition-normal);
-        }
-
-        .problem-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 3px;
-            height: 100%;
-            background: var(--color-gold);
-            transform: scaleY(0);
-            transform-origin: bottom;
-            transition: transform var(--transition-normal);
-        }
-
-        .problem-card:hover {
-            border-color: var(--color-gold);
-            transform: translateX(5px);
-        }
-
-        .problem-card:hover::before {
-            transform: scaleY(1);
-        }
-
-        .problem-icon {
-            width: 40px;
-            height: 40px;
-            margin-bottom: var(--spacing-sm);
-            color: var(--color-gold);
-        }
-
-        .problem-card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-xs);
-        }
-
-        .problem-card p {
-            font-size: 0.9rem;
-            color: var(--color-text-secondary);
-        }
-
-        .problems-conclusion {
-            text-align: center;
-            padding: var(--spacing-lg);
-            background: linear-gradient(135deg, rgba(212, 168, 83, 0.1) 0%, transparent 100%);
-            border: 1px solid var(--color-border);
-        }
-
-        .problems-conclusion p {
-            font-size: 1.25rem;
-            line-height: 2;
-        }
-
-        .problems-conclusion .highlight {
-            color: var(--color-gold);
-            font-weight: 700;
-        }
-
-        /* ========================================
-           Solution Section
-        ======================================== */
-        .solution {
-            background: var(--color-bg-primary);
-            position: relative;
-        }
-
-        .solution-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-xl);
-            align-items: center;
-        }
-
-        .solution-text h2 {
-            font-family: var(--font-display);
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: var(--spacing-md);
-        }
-
-        .solution-text h2 .gold-text {
-            display: block;
-        }
-
-        .solution-text p {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-sm);
-            font-size: 1.1rem;
-        }
-
-        .solution-features {
-            margin-top: var(--spacing-md);
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-sm);
-        }
-
-        .solution-feature {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-sm);
-        }
-
-        .solution-feature svg {
-            width: 24px;
-            height: 24px;
-            color: var(--color-gold);
-            flex-shrink: 0;
-        }
-
-        .solution-feature span {
-            font-weight: 500;
-        }
-
-        .solution-image {
-            position: relative;
-        }
-
-        .solution-image-wrapper {
-            position: relative;
-            aspect-ratio: 4/5;
-            background: var(--color-bg-tertiary);
-            border: 1px solid var(--color-border);
-            overflow: hidden;
-        }
-
-        .solution-image-wrapper::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(212, 168, 83, 0.2) 0%, transparent 50%);
-            z-index: 1;
-        }
-
-        .solution-image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .solution-image-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-text-muted);
-            text-align: center;
-            padding: var(--spacing-md);
-        }
-
-        .solution-image-placeholder svg {
-            width: 80px;
-            height: 80px;
-            margin-bottom: var(--spacing-sm);
-            opacity: 0.5;
-        }
-
-        .solution-badge {
-            position: absolute;
-            bottom: -20px;
-            right: -20px;
-            background: var(--color-gold);
-            color: var(--color-bg-primary);
-            padding: var(--spacing-sm) var(--spacing-md);
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 0.9rem;
-            letter-spacing: 0.05em;
-            z-index: 2;
-        }
-
-        /* ========================================
-           Services Section
-        ======================================== */
-        .services {
-            background: var(--color-bg-secondary);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: var(--spacing-md);
-        }
-
-        .service-card {
-            background: var(--color-bg-primary);
-            border: 1px solid var(--color-border);
-            padding: var(--spacing-lg);
-            position: relative;
-            transition: all var(--transition-normal);
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--transition-normal);
-        }
-
-        .service-card:hover {
-            border-color: var(--color-gold);
-            transform: translateY(-5px);
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .service-number {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--color-gold);
-            opacity: 0.3;
-            line-height: 1;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .service-card h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .service-card p {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .service-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--spacing-xs);
-        }
-
-        .service-tag {
-            font-size: 0.8rem;
-            padding: 4px 12px;
-            background: var(--color-bg-tertiary);
-            border: 1px solid var(--color-border);
-            color: var(--color-text-secondary);
-        }
-
-        /* ========================================
-           Legal Topics Section (専門論点)
-        ======================================== */
-        .legal-topics {
-            background: var(--color-bg-tertiary);
-            position: relative;
-        }
-
-        .legal-topics-intro {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto var(--spacing-lg);
-        }
-
-        .legal-topics-intro p {
-            color: var(--color-text-secondary);
-            font-size: 1.05rem;
-        }
-
-        .legal-topics-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--spacing-md);
-        }
-
-        .legal-topic-card {
-            background: var(--color-bg-secondary);
-            border: 1px solid var(--color-border);
-            padding: var(--spacing-md);
-            transition: all var(--transition-normal);
-        }
-
-        .legal-topic-card:hover {
-            border-color: var(--color-gold);
-            transform: translateY(-4px);
-        }
-
-        .legal-topic-card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-xs);
-            color: var(--color-gold);
-        }
-
-        .legal-topic-card p {
-            color: var(--color-text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        @media (max-width: 768px) {
-            .legal-topics-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* ========================================
-           Why Section
-        ======================================== */
-        .why {
-            background: var(--color-bg-primary);
-            position: relative;
-        }
-
-        .why::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(212, 168, 83, 0.05) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--spacing-lg);
-        }
-
-        .why-card {
-            text-align: center;
-            padding: var(--spacing-lg);
-            position: relative;
-        }
-
-        .why-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto var(--spacing-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid var(--color-gold);
-            color: var(--color-gold);
-            transition: all var(--transition-normal);
-        }
-
-        .why-card:hover .why-icon {
-            background: var(--color-gold);
-            color: var(--color-bg-primary);
-        }
-
-        .why-icon svg {
-            width: 36px;
-            height: 36px;
-        }
-
-        .why-card h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .why-card p {
-            color: var(--color-text-secondary);
-            font-size: 0.95rem;
-        }
-
-        /* ========================================
-           About Section (BenFitの由来)
-        ======================================== */
-        .about {
-            background: var(--color-bg-primary);
-            position: relative;
-        }
-
-        .about::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
-        }
-
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .about-name {
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .about-name-main {
-            display: block;
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            font-weight: 700;
-            color: var(--color-gold);
-            letter-spacing: 0.1em;
-        }
-
-        .about-name-reading {
-            display: block;
-            font-size: 1rem;
-            color: var(--color-text-secondary);
-            margin-top: var(--spacing-xs);
-            letter-spacing: 0.2em;
-        }
-
-        .about-text {
-            text-align: left;
-        }
-
-        .about-text p {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-md);
-            font-size: 1.05rem;
-            line-height: 2;
-        }
-
-        .about-quote {
-            font-size: 1.2rem !important;
-            color: var(--color-text-primary) !important;
-            font-weight: 500;
-            padding: var(--spacing-md);
-            background: var(--color-bg-tertiary);
-            border-left: 4px solid var(--color-gold);
-            margin: var(--spacing-md) 0 !important;
-        }
-
-        /* ========================================
-           Profile Section
-        ======================================== */
-        .profile {
-            background: var(--color-bg-secondary);
-        }
-
-        .profile-content {
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: var(--spacing-xl);
-            align-items: start;
-        }
-
-        .profile-image-wrapper {
-            position: relative;
-        }
-
-        .profile-image {
-            aspect-ratio: 1;
-            background: var(--color-bg-tertiary);
-            border: 1px solid var(--color-border);
-            overflow: hidden;
-        }
-
-        .profile-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .profile-image-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-text-muted);
-        }
-
-        .profile-image-placeholder svg {
-            width: 60px;
-            height: 60px;
-            margin-bottom: var(--spacing-xs);
-            opacity: 0.5;
-        }
-
-        .profile-badge {
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--color-gold);
-            color: var(--color-bg-primary);
-            padding: var(--spacing-xs) var(--spacing-md);
-            font-weight: 700;
-            font-size: 0.85rem;
-            white-space: nowrap;
-        }
-
-        .profile-info h3 {
-            font-family: var(--font-display);
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-xs);
-        }
-
-        .profile-title {
-            color: var(--color-gold);
-            font-weight: 500;
-            margin-bottom: var(--spacing-md);
-        }
-
-        .profile-description {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-md);
-            line-height: 2;
-        }
-
-        .profile-credentials {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-xs);
-            margin-bottom: var(--spacing-md);
-            padding: var(--spacing-md);
-            background: var(--color-bg-tertiary);
-            border-left: 3px solid var(--color-gold);
-        }
-
-        .profile-credential {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-sm);
-            font-size: 0.95rem;
-        }
-
-        .profile-credential svg {
-            width: 18px;
-            height: 18px;
-            color: var(--color-gold);
-            flex-shrink: 0;
-        }
-
-        .profile-quote {
-            font-size: 1.1rem;
-            font-style: italic;
-            color: var(--color-text-primary);
-            padding-left: var(--spacing-md);
-            border-left: 2px solid var(--color-gold);
-        }
-
-        /* ========================================
-           Pricing Section
-        ======================================== */
-        .pricing {
-            background: var(--color-bg-primary);
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--spacing-md);
-            margin-bottom: var(--spacing-xl);
-        }
-
-        .pricing-card {
-            background: var(--color-bg-secondary);
-            border: 1px solid var(--color-border);
-            padding: var(--spacing-lg);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            transition: all var(--transition-normal);
-        }
-
-        .pricing-card:hover {
-            border-color: var(--color-gold);
-            transform: translateY(-5px);
-        }
-
-        .pricing-card.featured {
-            border: 2px solid var(--color-gold);
-            background: linear-gradient(180deg, rgba(212, 168, 83, 0.1) 0%, var(--color-bg-secondary) 30%);
-        }
-
-        .pricing-badge-popular {
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--color-gold);
-            color: var(--color-bg-primary);
-            padding: 4px 20px;
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-
-        .pricing-header {
-            text-align: center;
-            margin-bottom: var(--spacing-md);
-        }
-
-        .pricing-label {
-            display: inline-block;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--color-gold);
-            letter-spacing: 0.1em;
-            margin-bottom: var(--spacing-xs);
-        }
-
-        .pricing-name {
-            font-size: 1.3rem;
-            font-weight: 700;
-        }
-
-        .pricing-price {
-            text-align: center;
-            padding: var(--spacing-md) 0;
-            border-top: 1px solid var(--color-border);
-            border-bottom: 1px solid var(--color-border);
-            margin-bottom: var(--spacing-md);
-        }
-
-        .price-amount {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--color-gold);
-        }
-
-        .price-unit {
-            font-size: 1rem;
-            color: var(--color-text-secondary);
-        }
-
-        .price-unit small {
-            font-size: 0.85rem;
-        }
-
-        .pricing-body {
-            flex: 1;
-        }
-
-        .pricing-description {
-            text-align: center;
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-md);
-            font-size: 0.95rem;
-        }
-
-        .pricing-features {
-            font-size: 0.9rem;
-        }
-
-        .pricing-feature-title {
-            font-weight: 700;
-            color: var(--color-gold);
-            margin-top: var(--spacing-sm);
-            margin-bottom: var(--spacing-xs);
-            font-size: 0.85rem;
-        }
-
-        .pricing-features ul {
-            list-style: none;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .pricing-features li {
-            padding: 4px 0;
-            padding-left: 1.2em;
-            position: relative;
-            color: var(--color-text-secondary);
-        }
-
-        .pricing-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--color-gold);
-            font-size: 0.8rem;
-        }
-
-        .pricing-btn {
-            margin-top: var(--spacing-md);
-            width: 100%;
-            text-align: center;
-        }
-
-        /* 顧問プラン詳細 */
-        .pricing-detail {
-            background: var(--color-bg-tertiary);
-            border: 1px solid var(--color-border);
-            padding: var(--spacing-lg);
-        }
-
-        .pricing-detail-title {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: var(--spacing-lg);
-            color: var(--color-gold);
-        }
-
-        .pricing-detail-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--spacing-md);
-        }
-
-        .pricing-detail-card {
-            background: var(--color-bg-primary);
-            border: 1px solid var(--color-border);
-            padding: var(--spacing-md);
-        }
-
-        .pricing-detail-card.premium {
-            border-color: var(--color-gold);
-        }
-
-        .pricing-detail-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: var(--spacing-sm);
-            padding-bottom: var(--spacing-sm);
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        .pricing-detail-header h4 {
-            font-size: 1.2rem;
-            font-weight: 700;
-        }
-
-        .pricing-detail-card.premium .pricing-detail-header h4 {
-            color: var(--color-gold);
-        }
-
-        .pricing-detail-price {
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--color-gold);
-        }
-
-        .pricing-detail-price small {
-            font-size: 0.8rem;
-            color: var(--color-text-secondary);
-        }
-
-        .pricing-detail-target {
-            font-size: 0.9rem;
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .pricing-detail-card ul {
-            list-style: none;
-        }
-
-        .pricing-detail-card li {
-            padding: 6px 0;
-            padding-left: 1.5em;
-            position: relative;
-            font-size: 0.9rem;
-            color: var(--color-text-secondary);
-        }
-
-        .pricing-detail-card li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--color-gold);
-        }
-
-        /* ========================================
-           Column Section
-        ======================================== */
-        .column {
-            background: var(--color-bg-secondary);
-        }
-
-        .column-lead {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-lg);
-            font-size: 1.05rem;
-        }
-
-        .column-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--spacing-md);
-        }
-
-        .column-card {
-            display: block;
-            background: var(--color-bg-primary);
-            border: 1px solid var(--color-border);
-            padding: var(--spacing-md);
-            text-decoration: none;
-            transition: all var(--transition-normal);
-        }
-
-        .column-card:hover {
-            border-color: var(--color-gold);
-            transform: translateY(-5px);
-        }
-
-        .column-card-category {
-            display: inline-block;
-            background: var(--color-gold);
-            color: var(--color-bg-primary);
-            padding: 4px 12px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .column-card-date {
-            font-size: 0.85rem;
-            color: var(--color-text-muted);
-            margin-bottom: var(--spacing-xs);
-        }
-
-        .column-card-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-sm);
-            line-height: 1.5;
-        }
-
-        .column-card-excerpt {
-            font-size: 0.9rem;
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-sm);
-            line-height: 1.7;
-        }
-
-        .column-card-link {
-            font-size: 0.9rem;
-            color: var(--color-gold);
-            font-weight: 500;
-        }
-
-        .column-card:hover .column-card-link {
-            text-decoration: underline;
-        }
-
-        /* ========================================
-           FAQ Section
-        ======================================== */
-        .faq {
-            background: var(--color-bg-primary);
-        }
-
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        .faq-question {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: var(--spacing-md) 0;
-            background: none;
-            border: none;
-            color: var(--color-text-primary);
-            font-family: var(--font-body);
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-align: left;
-            cursor: pointer;
-            transition: color var(--transition-fast);
-        }
-
-        .faq-question:hover {
-            color: var(--color-gold);
-        }
-
-        .faq-question svg {
-            width: 24px;
-            height: 24px;
-            transition: transform var(--transition-normal);
-            flex-shrink: 0;
-            margin-left: var(--spacing-sm);
-        }
-
-        .faq-item.active .faq-question svg {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--transition-normal);
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-
-        .faq-answer-inner {
-            padding-bottom: var(--spacing-md);
-            color: var(--color-text-secondary);
-            line-height: 1.8;
-        }
-
-        /* ========================================
-           CTA Section
-        ======================================== */
-        .cta {
-            background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
-        }
-
-        .cta-content {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .cta-title {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 700;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .cta-subtitle {
-            color: var(--color-text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: var(--spacing-md);
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: var(--spacing-xl);
-        }
-
-        /* ========================================
-           Contact Form
-        ======================================== */
-        .contact-form {
-            background: var(--color-bg-tertiary);
-            border: 1px solid var(--color-border);
-            padding: var(--spacing-lg);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-md);
-            text-align: center;
-        }
-
-        .form-group {
-            margin-bottom: var(--spacing-md);
-        }
-
-        .form-label {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: 500;
-            margin-bottom: var(--spacing-xs);
-            color: var(--color-text-secondary);
-        }
-
-        .form-label .required {
-            color: var(--color-gold);
-            margin-left: 4px;
-        }
-
-        .form-input,
-        .form-textarea {
-            width: 100%;
-            padding: var(--spacing-sm);
-            background: var(--color-bg-primary);
-            border: 1px solid var(--color-border);
-            color: var(--color-text-primary);
-            font-family: var(--font-body);
-            font-size: 1rem;
-            transition: border-color var(--transition-fast);
-        }
-
-        .form-input:focus,
-        .form-textarea:focus {
-            outline: none;
-            border-color: var(--color-gold);
-        }
-
-        .form-textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .form-submit {
-            width: 100%;
-            margin-top: var(--spacing-sm);
-        }
-
-        .form-note {
-            font-size: 0.85rem;
-            color: var(--color-text-muted);
-            text-align: center;
-            margin-top: var(--spacing-md);
-        }
-
-        /* ========================================
-           Footer
-        ======================================== */
-        .footer {
-            background: var(--color-bg-primary);
-            border-top: 1px solid var(--color-border);
-            padding: var(--spacing-lg) 0;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: var(--spacing-md);
-        }
-
-        .footer-logo {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .footer-logo span {
-            color: var(--color-gold);
-        }
-
-        .footer-social {
-            display: flex;
-            gap: var(--spacing-sm);
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border: 1px solid var(--color-border);
-            color: var(--color-text-secondary);
-            transition: all var(--transition-fast);
-        }
-
-        .social-link:hover {
-            border-color: var(--color-gold);
-            color: var(--color-gold);
-            background: rgba(212, 168, 83, 0.1);
-        }
-
-        .social-link svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: var(--spacing-md);
-            list-style: none;
-        }
-
-        .footer-links a {
-            font-size: 0.9rem;
-            color: var(--color-text-secondary);
-            transition: color var(--transition-fast);
-        }
-
-        .footer-links a:hover {
-            color: var(--color-gold);
-        }
-
-        .footer-copyright {
-            width: 100%;
-            text-align: center;
-            padding-top: var(--spacing-md);
-            margin-top: var(--spacing-md);
-            border-top: 1px solid var(--color-border);
-            font-size: 0.85rem;
-            color: var(--color-text-muted);
-        }
-
-        .footer-legal {
-            width: 100%;
-            text-align: center;
-            margin-top: var(--spacing-sm);
-            font-size: 0.85rem;
-            color: var(--color-text-muted);
-        }
-
-        .footer-legal a {
-            color: var(--color-text-muted);
-            transition: color var(--transition-fast);
-        }
-
-        .footer-legal a:hover {
-            color: var(--color-gold);
-        }
-
-        .footer-legal span {
-            margin: 0 var(--spacing-xs);
-        }
-
-        /* ========================================
-           Responsive
-        ======================================== */
-        @media (max-width: 1024px) {
-            .solution-content {
-                grid-template-columns: 1fr;
-                gap: var(--spacing-lg);
-            }
-
-            .solution-image {
-                order: -1;
-                max-width: 400px;
-                margin: 0 auto;
-            }
-
-            .why-grid {
-                grid-template-columns: 1fr;
-                gap: var(--spacing-md);
-            }
-
-            .profile-content {
-                grid-template-columns: 1fr;
-                gap: var(--spacing-lg);
-            }
-
-            .profile-image-wrapper {
-                max-width: 250px;
-                margin: 0 auto;
-            }
-
-            .pricing-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .pricing-detail-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .mobile-menu-btn {
-                display: flex;
-            }
-
-            .section {
-                padding: var(--spacing-xl) 0;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 var(--spacing-sm);
-            }
-
-            .hero-title {
-                font-size: 2rem;
-            }
-
-            .problems-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        /* --- コラム絞り込みUI --- */
-        .column-filter {
-            margin-bottom: var(--spacing-lg);
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-md);
-        }
-        .column-tabs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-        .column-tab {
-            background: transparent;
-            border: 1px solid var(--color-border);
-            color: var(--color-text-secondary);
-            padding: 0.5rem 1.1rem;
-            border-radius: 999px;
-            font-family: var(--font-body);
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all var(--transition-fast);
-        }
-        .column-tab:hover {
-            border-color: var(--color-gold);
-            color: var(--color-text-primary);
-        }
-        .column-tab.active {
-            background: var(--color-gold);
-            border-color: var(--color-gold);
-            color: var(--color-bg-primary);
-            font-weight: 700;
-        }
-        .column-tab .count {
-            opacity: 0.7;
-            font-size: 0.8rem;
-            margin-left: 0.35rem;
-        }
-        .column-tab.active .count { opacity: 0.85; }
-        .column-search { position: relative; }
-        .column-search input {
-            width: 100%;
-            padding: 0.9rem 1rem 0.9rem 2.9rem;
-            background: var(--color-bg-tertiary);
-            border: 1px solid var(--color-border);
-            border-radius: 4px;
-            color: var(--color-text-primary);
-            font-family: var(--font-body);
-            font-size: 0.95rem;
-            transition: border-color var(--transition-fast);
-        }
-        .column-search input:focus { outline: none; border-color: var(--color-gold); }
-        .column-search input::placeholder { color: var(--color-text-muted); }
-        .column-search svg {
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 1.1rem;
-            height: 1.1rem;
-            color: var(--color-text-muted);
-            pointer-events: none;
-        }
-        .column-resultcount {
-            font-size: 0.85rem;
-            color: var(--color-text-muted);
-            margin: 0;
-        }
-        .column-noresults {
-            display: none;
-            text-align: center;
-            color: var(--color-text-muted);
-            padding: var(--spacing-lg) 0;
-        }
-        .column-more { text-align: center; margin-top: var(--spacing-lg); }
-        .column-more-btn { display: inline-block; padding: 0.9rem 2rem; border: 1px solid var(--color-gold); color: var(--color-gold); border-radius: 999px; font-weight: 700; text-decoration: none; transition: all var(--transition-fast); }
-        .column-more-btn:hover { background: var(--color-gold); color: var(--color-bg-primary); }
-        .column-back { margin-bottom: var(--spacing-md); }
-        .column-back a { color: var(--color-gold); text-decoration: none; font-size: 0.9rem; }
-        .column-back a:hover { text-decoration: underline; }
+        :root{
+            --dark-bg:#0a0a0a;--dark-bg2:#111111;--dark-bg3:#1a1a1a;--dark-border:#2a2a2a;
+            --gold:#d4a853;--gold-light:#e8c878;--gold-dark:#b8922f;
+            --light-bg:#f7f5f0;--light-bg2:#ffffff;--light-border:#e3ded4;
+            --light-text:#1a1a1a;--light-text2:#555555;--light-muted:#888888;
+            --font-display:'Oswald',sans-serif;--font-body:'Noto Sans JP',sans-serif;
+        }
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        body{font-family:var(--font-body);background:var(--dark-bg);color:#fff;line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased}
+        a{color:inherit}
+        .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+        .section{padding:5rem 0}
+        .section-title{font-family:var(--font-body);font-weight:900;font-size:2rem;line-height:1.3;text-align:center;margin-bottom:.75rem}
+        .section-title::after{content:"";display:block;width:48px;height:3px;background:var(--gold);margin:1rem auto 0}
+        .section-dark{background:var(--dark-bg);color:#fff}
+        .section-light{background:var(--light-bg);color:var(--light-text)}
+        .section-light .section-title{color:var(--light-text)}
+        .section-light .section-title::after{background:var(--gold-dark)}
+
+        /* ヘッダー */
+        .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--dark-border);transition:background .2s}
+        .header.scrolled{background:rgba(10,10,10,.97)}
+        .header-inner{max-width:1100px;margin:0 auto;padding:0 1.5rem;height:70px;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--gold);text-decoration:none;letter-spacing:.05em}
+        .nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none}
+        .nav-links a{color:#e0e0e0;text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+        .nav-links a:hover{color:var(--gold)}
+        .nav-links a.nav-cta{background:var(--gold);color:var(--dark-bg);padding:.55rem 1.25rem;border-radius:2px;font-weight:700}
+        .nav-links a.nav-cta:hover{background:var(--gold-light)}
+        .mobile-menu-btn{display:none;background:none;border:none;color:#fff;font-size:1.7rem;cursor:pointer;line-height:1}
+        @media(max-width:900px){
+            .nav-links{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;align-items:flex-start;background:#0a0a0a;padding:1.5rem;gap:1.25rem;border-bottom:1px solid var(--dark-border)}
+            .nav-links.open{display:flex}
+            .mobile-menu-btn{display:block}
+        }
+
+        /* ヒーロー */
+        .hero{background:var(--dark-bg);padding:calc(70px + 5rem) 0 5rem;position:relative;overflow:hidden}
+        .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 30%,rgba(212,168,83,.12),transparent 55%);pointer-events:none}
+        .hero-inner{max-width:1100px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;position:relative}
+        .hero-label{display:inline-block;font-size:.8rem;letter-spacing:.15em;color:var(--gold);border:1px solid rgba(212,168,83,.4);padding:.35rem .9rem;border-radius:999px;margin-bottom:1.5rem}
+        .hero-title{font-size:2.6rem;font-weight:900;line-height:1.35;color:#fff;margin-bottom:1.5rem}
+        .hero-title .highlight{color:var(--gold)}
+        .hero-subtitle{color:#b0b0b0;font-size:1.05rem;margin-bottom:2rem}
+        .hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+        .btn{display:inline-block;padding:.9rem 2rem;border-radius:2px;font-weight:700;text-decoration:none;font-size:.95rem;transition:all .2s;border:1px solid transparent}
+        .btn-primary{background:var(--gold);color:var(--dark-bg);border-color:var(--gold)}
+        .btn-primary:hover{background:var(--gold-light);border-color:var(--gold-light);transform:translateY(-2px)}
+        .btn-outline{border-color:var(--gold);color:var(--gold)}
+        .btn-outline:hover{background:var(--gold);color:var(--dark-bg)}
+        .hero-image{position:relative;max-width:400px;margin:0 auto;width:100%}
+        .hero-image img{width:100%;aspect-ratio:3/5;object-fit:cover;object-position:center;border:1px solid var(--dark-border);display:block}
+        .hero-badge{position:absolute;bottom:-14px;right:-8px;background:var(--gold);color:var(--dark-bg);font-family:var(--font-display);font-weight:600;padding:.4rem 1rem;letter-spacing:.05em;font-size:.85rem}
+        @media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-title{font-size:2rem}.hero{padding-top:calc(70px + 3rem)}}
+        @media(max-width:600px){.hero-title{font-size:1.65rem}.hero-subtitle br{display:none}}
+
+        /* よくあるご相談（ダーク） */
+        .consult-note{text-align:center;color:#888;font-size:.85rem;margin-bottom:3rem}
+        .consult-phase{margin-bottom:2.5rem}
+        .consult-phase-title{font-family:var(--font-display);font-size:1.05rem;letter-spacing:.08em;color:var(--gold);margin-bottom:1rem;padding-left:.75rem;border-left:3px solid var(--gold)}
+        .consult-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+        .consult-card{display:flex;flex-direction:column;gap:.5rem;background:var(--dark-bg3);border:1px solid var(--dark-border);border-radius:4px;padding:1.5rem;text-decoration:none;transition:all .2s}
+        .consult-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+        .consult-q{font-size:1.05rem;font-weight:700;color:#fff}
+        .consult-q::before{content:"「";color:var(--gold)}.consult-q::after{content:"」";color:var(--gold)}
+        .consult-a{font-size:.9rem;color:#a0a0a0;line-height:1.7;flex-grow:1}
+        .consult-link{font-size:.85rem;font-weight:700;color:var(--gold);margin-top:.5rem}
+        .consult-cta{text-align:center;margin-top:2.5rem}
+        @media(max-width:640px){.consult-grid{grid-template-columns:1fr}}
+
+        /* 選ばれる理由（ライト） */
+        .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
+        .why-card{background:var(--light-bg2);border:1px solid var(--light-border);border-radius:4px;padding:2rem 1.5rem;transition:all .2s}
+        .why-card:hover{border-color:var(--gold-dark);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+        .why-icon{width:48px;height:48px;border-radius:50%;background:rgba(184,146,47,.12);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+        .why-icon svg{width:24px;height:24px;color:var(--gold-dark)}
+        .why-card h3{font-size:1.05rem;font-weight:700;color:var(--light-text);margin-bottom:.75rem;line-height:1.5}
+        .why-card p{font-size:.9rem;color:var(--light-text2);line-height:1.7}
+        @media(max-width:1000px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:600px){.why-grid{grid-template-columns:1fr}}
+
+        /* 最新コラム（ライト） */
+        .column-lead{text-align:center;color:var(--light-text2);margin-bottom:3rem}
+        .column-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+        .column-card{display:flex;flex-direction:column;background:var(--light-bg2);border:1px solid var(--light-border);border-radius:4px;padding:1.5rem;text-decoration:none;transition:all .2s}
+        .column-card:hover{border-color:var(--gold-dark);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+        .column-card-category{display:inline-block;align-self:flex-start;background:rgba(184,146,47,.12);color:var(--gold-dark);font-size:.72rem;font-weight:600;letter-spacing:.05em;padding:.2rem .6rem;border-radius:2px;margin-bottom:.5rem}
+        .column-card-date{font-size:.8rem;color:var(--light-muted);margin-bottom:.6rem}
+        .column-card-title{font-size:1rem;font-weight:700;color:var(--light-text);line-height:1.5;margin-bottom:.75rem}
+        .column-card-excerpt{font-size:.88rem;color:var(--light-text2);line-height:1.7;flex-grow:1;margin-bottom:1rem}
+        .column-card-link{font-size:.85rem;font-weight:700;color:var(--gold-dark)}
+        .column-more{text-align:center;margin-top:2.5rem}
+        .column-more-btn{display:inline-block;padding:.9rem 2rem;border:1px solid var(--gold-dark);color:var(--gold-dark);border-radius:999px;font-weight:700;text-decoration:none;transition:all .2s}
+        .column-more-btn:hover{background:var(--gold-dark);color:#fff}
+        @media(max-width:900px){.column-grid{grid-template-columns:1fr}}
+
+        /* CTA帯（ダーク） */
+        .cta-band{background:linear-gradient(135deg,#151310,#0a0a0a);border-top:1px solid var(--dark-border);border-bottom:1px solid var(--dark-border);padding:4.5rem 0;text-align:center}
+        .cta-band h2{font-size:1.75rem;font-weight:900;color:#fff;margin-bottom:.75rem}
+        .cta-band p{color:#a0a0a0;margin-bottom:1.75rem}
+        .cta-band .cta-note{font-size:.8rem;color:#777;margin-top:1.25rem;margin-bottom:0}
+
+        /* フッター（ダーク） */
+        .footer{background:var(--dark-bg2);color:#a0a0a0;padding:4rem 0 2rem}
+        .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1.3fr 1fr;gap:2.5rem;margin-bottom:3rem}
+        .footer-logo{font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:700;margin-bottom:.5rem;letter-spacing:.05em}
+        .footer-tagline{font-size:.85rem;color:#888;line-height:1.7;margin-bottom:1rem}
+        .footer-social{display:flex;gap:.75rem}
+        .footer-social a{display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;border:1px solid var(--dark-border);border-radius:50%;color:#a0a0a0;transition:all .2s}
+        .footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+        .footer-heading{font-size:.78rem;letter-spacing:.14em;color:var(--gold);font-weight:600;margin-bottom:1rem}
+        .footer-links{list-style:none}.footer-links li{margin-bottom:.6rem}
+        .footer-links a{color:#a0a0a0;text-decoration:none;font-size:.9rem}.footer-links a:hover{color:var(--gold)}
+        .footer-office p{font-size:.85rem;color:#a0a0a0;margin-bottom:.35rem;line-height:1.6}
+        .footer-office a{color:var(--gold);text-decoration:none}.footer-office a:hover{text-decoration:underline}
+        .footer-note{font-size:.8rem;color:#777}
+        .footer-bottom{border-top:1px solid var(--dark-border);padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:#666}
+        .footer-bottom a{color:#888;text-decoration:none;margin-right:1.25rem}
+        .footer-bottom a:hover{color:var(--gold)}
+        @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+        @media(max-width:600px){.footer-grid{grid-template-columns:1fr}}
+
+        /* アニメーション */
+        .animate-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+        .animate-on-scroll.visible{opacity:1;transform:none}
+
+        /* 下層ページ共通（ライト） */
+        .page-title{padding:calc(70px + 3.5rem) 0 2.5rem;background:var(--light-bg);border-bottom:1px solid var(--light-border);color:var(--light-text)}
+        .breadcrumb{font-size:.8rem;color:var(--light-muted);margin-bottom:1rem}
+        .breadcrumb a{color:var(--light-muted);text-decoration:none}.breadcrumb a:hover{color:var(--gold-dark)}
+        .page-heading{font-size:2.2rem;font-weight:900;color:var(--light-text);line-height:1.3;margin-bottom:.75rem}
+        .page-heading::after{content:"";display:block;width:48px;height:3px;background:var(--gold-dark);margin-top:1rem}
+        .page-lead{color:var(--light-text2);max-width:760px}
+        .section-light p{color:var(--light-text2)}
+        .section-light h2,.section-light h3{color:var(--light-text)}
+        .sub-heading{font-size:1.25rem;font-weight:700;color:var(--light-text);margin:2.5rem 0 1rem;padding-left:.75rem;border-left:3px solid var(--gold-dark)}
+        .card{background:var(--light-bg2);border:1px solid var(--light-border);border-radius:4px;padding:1.75rem}
+        @media(max-width:900px){.page-heading{font-size:1.75rem}}
+
+        /* コラム一覧・絞り込み（ライト） */
+        .column-filter{margin-bottom:3rem;display:flex;flex-direction:column;gap:1.5rem}
+        .column-tabs{display:flex;flex-wrap:wrap;gap:.5rem}
+        .filter-row{display:flex;align-items:flex-start;gap:1rem}
+        .filter-label{flex:0 0 4.5rem;font-size:.78rem;letter-spacing:.1em;color:var(--gold-dark);font-weight:700;padding-top:.6rem}
+        @media(max-width:640px){.filter-row{flex-direction:column;gap:.4rem}.filter-label{padding-top:0}}
+        .column-tab{background:var(--light-bg2);border:1px solid var(--light-border);color:var(--light-text2);padding:.5rem 1.1rem;border-radius:999px;font-family:var(--font-body);font-size:.9rem;font-weight:500;cursor:pointer;transition:all .2s}
+        .column-tab:hover{border-color:var(--gold-dark);color:var(--light-text)}
+        .column-tab.active{background:var(--gold-dark);border-color:var(--gold-dark);color:#fff;font-weight:700}
+        .column-tab .count{opacity:.8;font-size:.8rem;margin-left:.35rem}
+        .column-search{position:relative}
+        .column-search input{width:100%;padding:.9rem 1rem .9rem 2.9rem;background:var(--light-bg2);border:1px solid var(--light-border);border-radius:4px;color:var(--light-text);font-family:var(--font-body);font-size:.95rem;transition:border-color .2s,box-shadow .2s}
+        .column-search input:focus{outline:none;border-color:var(--gold-dark);box-shadow:0 0 0 3px rgba(184,146,47,.12)}
+        .column-search input::placeholder{color:var(--light-muted)}
+        .column-search svg{position:absolute;left:1rem;top:50%;transform:translateY(-50%);width:1.1rem;height:1.1rem;color:var(--light-muted);pointer-events:none}
+        .column-resultcount{font-size:.85rem;color:var(--light-muted);margin:0}
+        .column-noresults{display:none;text-align:center;color:var(--light-muted);padding:4rem 0}
     </style>
 </head>
 <body>
+
     <header class="header" id="header">
-        <div class="container">
-            <div class="header-inner">
-                <a href="index.html" class="logo">BEN<span>FIT</span></a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="index.html#consult">よくあるご相談</a></li>
-                        <li><a href="index.html#services">サービス</a></li>
-                        <li><a href="index.html#pricing">料金</a></li>
-                        <li><a href="index.html#why">選ばれる理由</a></li>
-                        <li><a href="index.html#about">BenFitとは</a></li>
-                        <li><a href="columns.html">コラム</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                        <li><a href="index.html#contact">お問い合わせ</a></li>
-                    </ul>
-                </nav>
-                <button class="mobile-menu-btn" aria-label="メニュー">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+        <div class="header-inner">
+            <a href="index.html" class="logo">BenFit</a>
+            <button class="mobile-menu-btn" aria-label="メニュー" aria-expanded="false">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="services.html">サービス</a></li>
+                <li><a href="pricing.html">料金・顧問契約</a></li>
+                <li><a href="columns.html">コラム</a></li>
+                <li><a href="about.html">BenFitについて</a></li>
+                <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="contact.html" class="nav-cta">相談する</a></li>
+            </ul>
         </div>
     </header>
 
-    <section class="column section" id="column" style="padding-top: 7rem;">
-        <div class="container">
-            <div class="column-back animate-on-scroll"><a href="index.html">← トップページへ戻る</a></div>
-            <h2 class="section-title animate-on-scroll">コラム一覧</h2>
-            <p class="column-lead animate-on-scroll">フィットネス業界の法律問題を、実際の事例をもとに解説します。カテゴリやキーワードで絞り込めます。</p>
-
-            <div class="column-filter animate-on-scroll">
-                <div class="column-tabs" id="columnTabs"></div>
-                <div class="column-search">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    <input type="text" id="columnSearch" placeholder="キーワードで探す（例：解約、熱中症、競業避止、免責）" aria-label="コラムをキーワードで検索">
-                </div>
-                <p class="column-resultcount" id="columnResultCount"></p>
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <nav class="breadcrumb"><a href="index.html">ホーム</a> › コラム</nav>
+                <h1 class="page-heading">コラム</h1>
+                <p class="page-lead">フィットネス業界の法律問題を、実際の裁判例・紛争事例・行政資料をもとに解説しています。カテゴリやキーワードで絞り込めます。</p>
             </div>
+        </section>
 
-            <div class="column-grid">
-                <a href="column-033.html" class="column-card animate-on-scroll">
+        <section class="section section-light" id="column">
+            <div class="container">
+                <div class="column-filter animate-on-scroll">
+                    <div class="filter-row"><span class="filter-label">カテゴリ</span><div class="column-tabs" id="columnTabs"></div></div>
+                    <div class="filter-row"><span class="filter-label">テーマ</span><div class="column-tabs" id="themeTabs"></div></div>
+                    <div class="filter-row"><span class="filter-label">業態</span><div class="column-tabs" id="industryTabs"></div></div>
+                    <div class="column-search">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="columnSearch" placeholder="キーワードで探す（例：解約、熱中症、競業避止、免責）" aria-label="コラムをキーワードで検索">
+                    </div>
+                    <p class="column-resultcount" id="columnResultCount"></p>
+                </div>
+                <div class="column-grid">
+                <a href="column-033.html" class="column-card animate-on-scroll" data-theme="労務・人事" data-industry="パーソナルジム">
                     <div class="column-card-category">実務解説</div>
                     <div class="column-card-date">2026.09.05</div>
                     <h3 class="column-card-title">業務委託トレーナーが指導中にケガをしたら——「労災は関係ない」の落とし穴</h3>
                     <p class="column-card-excerpt">労働者性は契約書ではなく実態で決まり、雇用と同視されれば労災を含む労働法が全面適用。真のフリーランスは令和6年11月から全業種で特別加入が可能に（年間1万円前後）。ジム・トレーナー双方の対応を解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-032.html" class="column-card animate-on-scroll">
+                <a href="column-032.html" class="column-card animate-on-scroll" data-theme="安全・事故|個人情報" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">実務解説</div>
                     <div class="column-card-date">2026.08.29</div>
                     <h3 class="column-card-title">スタッフ不在の時間に事故が起きたら——24時間ジムの安全配慮と防犯カメラ</h3>
                     <p class="column-card-excerpt">無人でも安全配慮義務は消えず、「一切責任を負わない」条項は無効となり得ます。器具・緊急通報・共連れ対策に加え、防犯カメラの掲示・目的管理・目的外利用の同意まで、無人運営の実務を解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-031.html" class="column-card animate-on-scroll">
+                <a href="column-031.html" class="column-card animate-on-scroll" data-theme="労務・人事|契約・消費者" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">実務解説</div>
                     <div class="column-card-date">2026.08.22</div>
                     <h3 class="column-card-title">2026年10月、カスハラ対策が義務化——ジムが今すぐ準備すべきこと</h3>
                     <p class="column-card-excerpt">改正労働施策総合推進法により、企業規模を問わず全事業主にカスハラ対策が義務化。正当なクレームとの線引き、方針・相談窓口・マニュアル・規約の整備、悪質会員への利用停止・退会対応まで解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-030.html" class="column-card animate-on-scroll">
+                <a href="column-030.html" class="column-card animate-on-scroll" data-theme="経営・多店舗" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">実務解説</div>
                     <div class="column-card-date">2026.08.15</div>
                     <h3 class="column-card-title">ジムのフランチャイズ、その説明で足りていますか——加盟前後のトラブルを防ぐ</h3>
                     <p class="column-card-excerpt">フィットネスは小売・飲食と違い法定開示義務の対象外。しかし公取委のFCガイドラインは全業種に適用され、予想売上の根拠が不合理ならぎまん的顧客誘引に当たり得ます。加盟側・本部側の実務対応を解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-029.html" class="column-card animate-on-scroll">
+                <a href="column-029.html" class="column-card animate-on-scroll" data-theme="個人情報|広告・表示" data-industry="パーソナルジム">
                     <div class="column-card-category">実務解説</div>
                     <div class="column-card-date">2026.08.08</div>
                     <h3 class="column-card-title">ビフォーアフター写真、その同意で足りていますか——会員の身体データとSNS発信</h3>
                     <p class="column-card-excerpt">写真掲載は「利用目的の公表」＋肖像権の観点からの明確な同意が必要。既往症は要配慮個人情報、効果の見せ方は景表法（優良誤認・ステマ規制）の問題。同意書に入れるべき項目まで実務解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-028.html" class="column-card animate-on-scroll">
+                <a href="column-028.html" class="column-card animate-on-scroll" data-theme="知財・ブランド" data-industry="ヨガ・ピラティス">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.08.01</div>
                     <h3 class="column-card-title">レッスンのBGM、無許諾で流していませんか——スタジオの音楽と著作権</h3>
                     <p class="column-card-excerpt">レッスン中のCD再生は「公の演奏」に当たり、受講料は音楽の対価としての性質も持つとして著作権侵害を認定（名古屋高裁H16.3.4）。BGMとスタジオ利用で異なる手続き、個人サブスクの注意点まで解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-027.html" class="column-card animate-on-scroll">
+                <a href="column-027.html" class="column-card animate-on-scroll" data-theme="契約・消費者" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">紛争事例解説</div>
                     <div class="column-card-date">2026.07.25</div>
                     <h3 class="column-card-title">「傷害・盗難は一切責任を負いません」——ジムの会員規約の免責条項は有効か</h3>
                     <p class="column-card-excerpt">「一切責任を負いません」等の免責条項は、ジムに過失があれば消費者契約法8条で無効になり得ます。退会制限・会費不返還も10条・民法で無効リスク。適格消費者団体の申入れで規約が是正された紛争事例を解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-026.html" class="column-card animate-on-scroll">
+                <a href="column-026.html" class="column-card animate-on-scroll" data-theme="労務・人事" data-industry="パーソナルジム">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.07.18</div>
                     <h3 class="column-card-title">競業避止条項は「書けば有効」ではない——独立・引き抜きトラブルの3つの落とし穴</h3>
                     <p class="column-card-excerpt">「退店後1.5km以内は営業禁止」の条項の効力等が争われた裁判例。競業避止条項が無効になる場合、引き抜きの立証の難しさ、労働環境が経営側に不利に働く点を解説（名古屋地裁H29.12.1・請求棄却）。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-025.html" class="column-card animate-on-scroll">
+                <a href="column-025.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="パーソナルジム">
                     <div class="column-card-category">紛争事例解説</div>
                     <div class="column-card-date">2026.07.11</div>
                     <h3 class="column-card-title">パーソナルトレーニングの事故、7年で196件——消費者事故調が求めた安全確保の仕組み</h3>
                     <p class="column-card-excerpt">4割が1か月以上の治療、腰・下半身に集中。「限界を言えない構造」に注目し、トレーナー向け基準の策定や事業者横断の事故情報収集を行政に求めた消費者事故調の報告書（2026.5公表）を、ジム目線で解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-024.html" class="column-card animate-on-scroll">
+                <a href="column-024.html" class="column-card animate-on-scroll" data-theme="施術・資格|安全・事故" data-industry="整体・カイロ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.07.04</div>
                     <h3 class="column-card-title">首を「ボキッ」と鳴らすカイロ施術で後遺障害。無資格施術の危険と「消滅時効」の落とし穴</h3>
                     <p class="column-card-excerpt">厚生省通知が“危険”と名指しする頚椎スラスト。腱の部分断裂で後遺障害12級・1,330万円。不法行為は時効で棄却も、診療契約上の債務不履行で救済された東京地裁判決。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-023.html" class="column-card animate-on-scroll">
+                <a href="column-023.html" class="column-card animate-on-scroll" data-theme="施術・資格|安全・事故" data-industry="整体・カイロ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.06.27</div>
                     <h3 class="column-card-title">生後4か月児が施術中に死亡。「6,000回の実績」は安全の証明にならない</h3>
                     <p class="column-card-excerpt">頸動脈洞への刺激は5秒でも迷走神経反射を起こす。「実績の多さは危険が現実化しなかっただけ」と断じ、ブログ広報を担った副理事長にも幇助責任（民法719条2項）を認めた神戸地裁判決。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-022.html" class="column-card animate-on-scroll">
-                    <div class="column-card-category">判例解説</div>
-                    <div class="column-card-date">2026.06.20</div>
-                    <h3 class="column-card-title">「管理監督者」でも深夜手当は払わなければならない。スポーツクラブのエリア統括職をめぐる判例</h3>
-                    <p class="column-card-excerpt">エリアディレクターを管理監督者と認めつつ、深夜手当の支払いと賞与の一方的減額無効を命じた京都地裁判決。「残業代ゼロ」の誤解を正す。</p>
-                    <span class="column-card-link">続きを読む →</span>
-                </a>
-
-                <a href="column-021.html" class="column-card animate-on-scroll">
+                <a href="column-021.html" class="column-card animate-on-scroll" data-theme="広告・表示" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">紛争事例解説</div>
                     <div class="column-card-date">2026.06.13</div>
                     <h3 class="column-card-title">「3週間で-13kg」ダイエットサプリに1,086万円の課徴金。プロテイン物販ジムが知るべき景表法</h3>
                     <p class="column-card-excerpt">機能性表示食品の根拠なき痩身効果・不適切No.1表示に課徴金命令。アフィリエイト広告でも表示主体は広告主。サプリ物販ジム必読。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-020.html" class="column-card animate-on-scroll">
+                <a href="column-020.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="プール・施設">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.06.06</div>
                     <h3 class="column-card-title">ホテルプールで大学生溺死。約8,000万円の賠償命令——監視員ゼロが招いた福岡地裁判決</h3>
                     <p class="column-card-excerpt">水深1.1m→2mと変化するプールで大学生溺死。常設監視員ゼロ・救命具なし・水深表示不備を注意義務違反と認定した最新判例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-019.html" class="column-card animate-on-scroll">
+                <a href="column-019.html" class="column-card animate-on-scroll" data-theme="個人情報" data-industry="エステ・サロン">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.05.30</div>
                     <h3 class="column-card-title">顧客5万件の個人情報がネット流出。エステ・ジム業界に響く「センシティブ情報」管理責任</h3>
                     <p class="column-card-excerpt">サーバー管理会社の設定ミスを起因に5万件の顧客情報がネット流出。委託元の使用者責任を認定し1人3万5千円の慰謝料が命じられた事例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-018.html" class="column-card animate-on-scroll">
+                <a href="column-018.html" class="column-card animate-on-scroll" data-theme="労務・人事" data-industry="ヨガ・ピラティス">
                     <div class="column-card-category">紛争事例解説</div>
                     <div class="column-card-date">2026.05.23</div>
                     <h3 class="column-card-title">業務委託のヨガ講師は「労働者」？東京都労委が認めた組合員性と不当労働行為</h3>
                     <p class="column-card-excerpt">業務委託契約のインストラクターでも労組法上の労働者に該当。クラス削減を不当労働行為と認定した東京都労委の救済命令を解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-017.html" class="column-card animate-on-scroll">
+                <a href="column-017.html" class="column-card animate-on-scroll" data-theme="広告・表示" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">紛争事例解説</div>
                     <div class="column-card-date">2026.05.16</div>
                     <h3 class="column-card-title">大手24時間ジムに措置命令。「24時間使い放題」と口コミ風広告の落とし穴</h3>
                     <p class="column-card-excerpt">消費者庁が大手フィットネスチェーンに景表法違反で措置命令。ステマ規制違反は施行後2件目。SNS広告と「お客様の声」運用のリスクを解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-016.html" class="column-card animate-on-scroll">
+                <a href="column-016.html" class="column-card animate-on-scroll" data-theme="知財・ブランド" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.05.09</div>
                     <h3 class="column-card-title">「初動負荷」は著作物か？トレーニング理論の名称と著作権の限界</h3>
                     <p class="column-card-excerpt">著名トレーナーが提唱した「初動負荷」理論の名称を雑誌が無断使用。著作権・不競法・契約違反で争われた事例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-015.html" class="column-card animate-on-scroll">
+                <a href="column-015.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="プール・施設">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.05.04</div>
                     <h3 class="column-card-title">6歳児がプールで溺死。園長に有罪判決——監視体制の「過失」とは何か</h3>
                     <p class="column-card-excerpt">水深1.3mの大プールに身長126cmの児童が立ち入り溺死。班分け・遊泳区域指定を怠った園長に禁錮1年6月（執行猶予4年）。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-014.html" class="column-card animate-on-scroll">
+                <a href="column-014.html" class="column-card animate-on-scroll" data-theme="知財・ブランド" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.04.27</div>
                     <h3 class="column-card-title">「ヘルスジム」は商標登録できない？ジム名のネーミングと商標法の落とし穴</h3>
                     <p class="column-card-excerpt">「ヘルスジム」の商標登録が知財高裁で拒絶。「健康のためのトレーニング施設」を意味する記述的商標と判断された事例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-013.html" class="column-card animate-on-scroll">
+                <a href="column-013.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.04.18</div>
                     <h3 class="column-card-title">水泳中でも熱中症になる。障害者向け水泳教室での死亡事故と指導者の義務</h3>
                     <p class="column-card-excerpt">プール室温36℃・水温32℃の環境下で練習生が熱中症死亡。強制給水措置を怠った指導者の責任が認められた事例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-012.html" class="column-card animate-on-scroll">
+                <a href="column-012.html" class="column-card animate-on-scroll" data-theme="契約・消費者" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.04.11</div>
                     <h3 class="column-card-title">車椅子会員を除名したジム。障害者差別と「合理的配慮」の境界線</h3>
                     <p class="column-card-excerpt">電動車椅子利用の会員を除名した大手スポーツジム。除名は「根拠を欠くもので無効」とされた事例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-011.html" class="column-card animate-on-scroll">
+                <a href="column-011.html" class="column-card animate-on-scroll" data-theme="契約・消費者|広告・表示" data-industry="パーソナルジム">
                     <div class="column-card-category">紛争事例解説</div>
                     <div class="column-card-date">2026.04.04</div>
                     <h3 class="column-card-title">「今日だけ割引」で契約させられた？パーソナルジム勧誘と中途解約の法的問題</h3>
                     <p class="column-card-excerpt">約30万円のパーソナルトレーニング契約で腰を負傷し解約拒否。特商法・景表法・消費者契約法の3つの論点を解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-010.html" class="column-card animate-on-scroll">
+                <a href="column-010.html" class="column-card animate-on-scroll" data-theme="知財・ブランド" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.03.28</div>
                     <h3 class="column-card-title">取引終了後もトレーナーの写真を使い続けたら？パブリシティ権侵害が認められた事例</h3>
                     <p class="column-card-excerpt">フィットネスプログラムのトレーナー画像を取引終了後もウェア販売サイトに掲載。110万円の損害賠償が認容された事例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-009.html" class="column-card animate-on-scroll">
+                <a href="column-009.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.03.21</div>
                     <h3 class="column-card-title">160kgのバーベル落下事故。補助トレーナーの責任は？</h3>
                     <p class="column-card-excerpt">ベンチプレス中の高重量バーベル落下で約2,724万円の賠償請求。トレーナーの注意義務の範囲が問われた事例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-008.html" class="column-card animate-on-scroll">
+                <a href="column-008.html" class="column-card animate-on-scroll" data-theme="知財・ブランド|経営・多店舗" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.03.14</div>
                     <h3 class="column-card-title">「コンビニ○○」はどこまで真似してよい？「コンビニジム」事件から学ぶ</h3>
                     <p class="column-card-excerpt">「コンビニフィットネス」vs「コンビニジム」。約4.9億円の損害賠償請求が棄却された不正競争防止法訴訟を解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-007.html" class="column-card animate-on-scroll">
+                <a href="column-007.html" class="column-card animate-on-scroll" data-theme="労務・人事" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2026.03.07</div>
                     <h3 class="column-card-title">「店長だから残業代なし」は通用しない？管理監督者の落とし穴</h3>
                     <p class="column-card-excerpt">スポーツクラブの支店長が管理監督者と認められなかった判例。ジム経営者が知るべき「名ばかり管理職」リスクを解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-006.html" class="column-card animate-on-scroll">
+                <a href="column-006.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2025.03.01</div>
                     <h3 class="column-card-title">貴重品ボックスから盗難発生。ジムの責任は？小型カメラ盗撮事件から学ぶ</h3>
                     <p class="column-card-excerpt">「対策を発注した」だけでは不十分。同種事故を知った時点で具体的な防止措置が必要とされた事例。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-005.html" class="column-card animate-on-scroll">
+                <a href="column-005.html" class="column-card animate-on-scroll" data-theme="契約・消費者" data-industry="パーソナルジム">
                     <div class="column-card-category">紛争事例解説</div>
                     <div class="column-card-date">2025.02.22</div>
                     <h3 class="column-card-title">「返金不可」の規約は本当に有効？パーソナルトレーニング中途解約トラブルから学ぶ</h3>
                     <p class="column-card-excerpt">消費者契約法により「返金不可」条項が制限された事例。安全配慮義務と清算ルールの整備について解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-004.html" class="column-card animate-on-scroll">
+                <a href="column-004.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2025.02.15</div>
                     <h3 class="column-card-title">濡れた廊下で転んだらジムの責任？スポーツクラブの工作物責任を考える</h3>
                     <p class="column-card-excerpt">「掲示と清掃」だけでは足りない。構造的な危険には構造的な対策が求められる。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-003.html" class="column-card animate-on-scroll">
+                <a href="column-003.html" class="column-card animate-on-scroll" data-theme="知財・ブランド" data-industry="パーソナルジム">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2025.02.08</div>
                     <h3 class="column-card-title">そのブランド、誰のもの？パーソナルジム商標トラブルから学ぶ経営リスク</h3>
                     <p class="column-card-excerpt">事業譲渡後のブランド権利、不使用取消審判のリスク。フランチャイズ・独立を考える方必見。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-002.html" class="column-card animate-on-scroll">
+                <a href="column-002.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="ジム・スポーツクラブ">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2025.02.06</div>
                     <h3 class="column-card-title">打撃投手にヘッドギアは必須？高校野球部の安全配慮義務違反が認められた事例</h3>
                     <p class="column-card-excerpt">業界ルールを知らなかったことは言い訳にならない。安全器具の整備と過失相殺の考え方を解説。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
-
-                <a href="column-001.html" class="column-card animate-on-scroll">
+                <a href="column-001.html" class="column-card animate-on-scroll" data-theme="安全・事故" data-industry="パーソナルジム">
                     <div class="column-card-category">判例解説</div>
                     <div class="column-card-date">2025.01.25</div>
                     <h3 class="column-card-title">「痛い」と言われたらどうする？トレーナーの安全配慮義務を考える</h3>
                     <p class="column-card-excerpt">トレーニング中に会員が痛みを訴えた場合、トレーナーはどう対応すべきか？実際の裁判例から学びます。</p>
                     <span class="column-card-link">続きを読む →</span>
                 </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="cta-band">
+            <div class="container animate-on-scroll">
+                <h2>コラムの内容について、相談したいことはありますか？</h2>
+                <p>記事で取り上げた論点は、実際の経営でも起こりやすいものばかりです。ご自身の状況に当てはめてご相談ください。</p>
+                <a href="contact.html" class="btn btn-primary">まずは相談してみる</a>
+                <p class="cta-note">初回のご相談は無料です。無理な勧誘は一切いたしません。</p>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">BEN<span>FIT</span></div>
-                <div class="footer-social">
-                    <a href="https://works.do/GkiX4R8" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LINE Works">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.349 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/lawyer_physique/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">BenFit</div>
+                    <p class="footer-tagline">フィットネス事業者のための法務パートナー。<br>弁護士・現役のフィジーク競技者が運営。</p>
+                    <div class="footer-social">
+                        <a href="https://works.do/GkiX4R8" target="_blank" rel="noopener noreferrer" aria-label="LINE Works">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.349 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/lawyer_physique/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <ul class="footer-links">
-                    <li><a href="index.html#services">サービス</a></li>
-                    <li><a href="index.html#pricing">料金</a></li>
-                    <li><a href="index.html#profile">プロフィール</a></li>
-                    <li><a href="index.html#contact">お問い合わせ</a></li>
-                </ul>
+                <div>
+                    <div class="footer-heading">MENU</div>
+                    <ul class="footer-links">
+                        <li><a href="services.html">サービス</a></li>
+                        <li><a href="pricing.html">料金・顧問契約</a></li>
+                        <li><a href="columns.html">コラム</a></li>
+                        <li><a href="about.html">BenFitについて</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-office">
+                    <div class="footer-heading">ABOUT</div>
+                    <p>BenFitは、弁護士（大阪弁護士会所属）が運営する、フィットネス事業者向けの法律サービスです。</p>
+                    <p>対応地域：大阪（対面）／全国（Zoom）</p>
+                    <p>お問い合わせは<a href="contact.html">フォーム</a>または<a href="https://works.do/GkiX4R8" target="_blank" rel="noopener noreferrer">LINE</a>から</p>
+                </div>
+                <div>
+                    <div class="footer-heading">RELATED</div>
+                    <ul class="footer-links">
+                        <li><span class="footer-note">刑事事件専門サイト（準備中）</span></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-legal">
-                <a href="privacy-policy.html">プライバシーポリシー</a>
-                <span>|</span>
-                <a href="terms.html">利用規約</a>
+            <div class="footer-bottom">
+                <div>
+                    <a href="privacy-policy.html">プライバシーポリシー</a>
+                    <a href="terms.html">利用規約</a>
+                </div>
+                <div>&copy; 2026 BenFit. All Rights Reserved.</div>
             </div>
-            <p class="footer-copyright">
-                &copy; 2025 BenFit. All Rights Reserved.
-            </p>
         </div>
     </footer>
 
     <script>
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) { header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+            if (window.scrollY > 50) header.classList.add('scrolled'); else header.classList.remove('scrolled');
         });
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } });
-        }, { root: null, rootMargin: '0px', threshold: 0.1 });
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
         document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        if (mobileMenuBtn && navLinks) {
-            mobileMenuBtn.addEventListener('click', () => {
-                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.getElementById('navLinks');
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', () => {
+                const open = navLinks.classList.toggle('open');
+                menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
             });
+            navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
         }
     </script>
-
     <script>
-    // --- コラム絞り込み（カテゴリタブ自動生成＋キーワード検索） ---
+    // --- コラム絞り込み（カテゴリ／テーマ／業態／キーワード） ---
     (function () {
         var section = document.getElementById('column');
         if (!section) return;
         var grid = section.querySelector('.column-grid');
-        var tabsEl = document.getElementById('columnTabs');
         var searchEl = document.getElementById('columnSearch');
         var countEl = document.getElementById('columnResultCount');
-        if (!grid || !tabsEl || !searchEl) return;
-
+        var groups = {
+            cat: { el: document.getElementById('columnTabs'), active: 'all', get: function (c) { return [c.dataset.cat]; } },
+            theme: { el: document.getElementById('themeTabs'), active: 'all', get: function (c) { return (c.dataset.theme || '').split('|').filter(Boolean); } },
+            industry: { el: document.getElementById('industryTabs'), active: 'all', get: function (c) { return (c.dataset.industry || '').split('|').filter(Boolean); } }
+        };
+        if (!grid || !searchEl) return;
         var cards = Array.prototype.slice.call(grid.querySelectorAll('.column-card'));
-        var activeCat = 'all';
 
-        // 該当なしメッセージを生成してグリッド直後に挿入
         var noResEl = document.createElement('p');
         noResEl.className = 'column-noresults';
-        noResEl.textContent = '該当するコラムが見つかりませんでした。キーワードやカテゴリを変えてお試しください。';
+        noResEl.textContent = '該当するコラムが見つかりませんでした。条件やキーワードを変えてお試しください。';
         grid.insertAdjacentElement('afterend', noResEl);
 
-        // 各カードのカテゴリ・検索用テキストを取得
         cards.forEach(function (card) {
             var catEl = card.querySelector('.column-card-category');
             var titleEl = card.querySelector('.column-card-title');
             var excEl = card.querySelector('.column-card-excerpt');
             card.dataset.cat = (catEl ? catEl.textContent : '').trim();
-            card.dataset.text = ((titleEl ? titleEl.textContent : '') + ' ' + (excEl ? excEl.textContent : '')).toLowerCase();
+            card.dataset.text = ((titleEl ? titleEl.textContent : '') + ' ' + (excEl ? excEl.textContent : '') + ' ' + (card.dataset.theme || '') + ' ' + (card.dataset.industry || '')).toLowerCase();
         });
 
-        // 出現順にカテゴリを収集（新カテゴリが増えても自動でタブ化）
-        var cats = [];
-        cards.forEach(function (c) {
-            if (c.dataset.cat && cats.indexOf(c.dataset.cat) === -1) cats.push(c.dataset.cat);
-        });
-
-        function countFor(cat) {
-            return cat === 'all' ? cards.length : cards.filter(function (c) { return c.dataset.cat === cat; }).length;
+        var ORDER = {
+            theme: ['安全・事故','契約・消費者','労務・人事','広告・表示','知財・ブランド','個人情報','施術・資格','経営・多店舗'],
+            industry: ['ジム・スポーツクラブ','パーソナルジム','ヨガ・ピラティス','整体・カイロ','エステ・サロン','プール・施設']
+        };
+        function valuesFor(key) {
+            var seen = [];
+            cards.forEach(function (c) { groups[key].get(c).forEach(function (v) { if (v && seen.indexOf(v) === -1) seen.push(v); }); });
+            if (ORDER[key]) seen.sort(function (a, b) { return ORDER[key].indexOf(a) - ORDER[key].indexOf(b); });
+            return seen;
         }
+        function matches(card, key, val) { return val === 'all' || groups[key].get(card).indexOf(val) !== -1; }
 
-        function makeTab(cat, label) {
-            var b = document.createElement('button');
-            b.type = 'button';
-            b.className = 'column-tab' + (cat === activeCat ? ' active' : '');
-            b.dataset.cat = cat;
-            b.innerHTML = label + ' <span class="count">' + countFor(cat) + '</span>';
-            b.addEventListener('click', function () {
-                activeCat = cat;
-                tabsEl.querySelectorAll('.column-tab').forEach(function (t) {
-                    t.classList.toggle('active', t.dataset.cat === cat);
+        function renderTabs(key) {
+            var g = groups[key]; if (!g.el) return;
+            g.el.innerHTML = '';
+            var vals = ['all'].concat(valuesFor(key));
+            vals.forEach(function (v) {
+                var b = document.createElement('button');
+                b.type = 'button';
+                b.className = 'column-tab' + (v === g.active ? ' active' : '');
+                b.dataset.val = v;
+                var n = cards.filter(function (c) { return matches(c, key, v); }).length;
+                b.innerHTML = (v === 'all' ? 'すべて' : v) + ' <span class="count">' + n + '</span>';
+                b.addEventListener('click', function () {
+                    g.active = v;
+                    g.el.querySelectorAll('.column-tab').forEach(function (t) { t.classList.toggle('active', t.dataset.val === v); });
+                    update(true);
                 });
-                update(true);
+                g.el.appendChild(b);
             });
-            return b;
         }
-
-        tabsEl.appendChild(makeTab('all', 'すべて'));
-        cats.forEach(function (cat) { tabsEl.appendChild(makeTab(cat, cat)); });
+        ['cat', 'theme', 'industry'].forEach(renderTabs);
 
         function update(force) {
             var q = (searchEl.value || '').trim().toLowerCase();
             var shown = 0;
             cards.forEach(function (card) {
-                var okCat = (activeCat === 'all' || card.dataset.cat === activeCat);
-                var okQ = (!q || card.dataset.text.indexOf(q) !== -1);
-                if (okCat && okQ) {
-                    card.style.display = '';
-                    if (force) card.classList.add('visible'); // フィルタ後に再表示したカードを確実に見せる
-                    shown++;
-                } else {
-                    card.style.display = 'none';
-                }
+                var ok = matches(card, 'cat', groups.cat.active) && matches(card, 'theme', groups.theme.active) && matches(card, 'industry', groups.industry.active) && (!q || card.dataset.text.indexOf(q) !== -1);
+                if (ok) { card.style.display = ''; if (force) card.classList.add('visible'); shown++; }
+                else { card.style.display = 'none'; }
             });
             if (countEl) countEl.textContent = shown + '件を表示';
             noResEl.style.display = (shown === 0) ? 'block' : 'none';
         }
-
         searchEl.addEventListener('input', function () { update(true); });
-        update(false); // 初期表示（スクロール時のフェードイン演出は維持）
+        update(false);
     })();
     </script>
 </body>

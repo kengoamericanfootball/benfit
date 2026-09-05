@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kengoamericanfootball.github.io/benfit/</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://kengoamericanfootball.github.io/benfit/services.html</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://kengoamericanfootball.github.io/benfit/pricing.html</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://kengoamericanfootball.github.io/benfit/about.html</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kengoamericanfootball.github.io/benfit/faq.html</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kengoamericanfootball.github.io/benfit/contact.html</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kengoamericanfootball.github.io/benfit/columns.html</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kengoamericanfootball.github.io/benfit/column-033.html</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kengoamericanfootball.github.io/benfit/column-032.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -13,7 +18,6 @@
   <url><loc>https://kengoamericanfootball.github.io/benfit/column-025.html</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kengoamericanfootball.github.io/benfit/column-024.html</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kengoamericanfootball.github.io/benfit/column-023.html</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kengoamericanfootball.github.io/benfit/column-022.html</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kengoamericanfootball.github.io/benfit/column-021.html</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kengoamericanfootball.github.io/benfit/column-020.html</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kengoamericanfootball.github.io/benfit/column-019.html</loc><lastmod>2026-05-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
